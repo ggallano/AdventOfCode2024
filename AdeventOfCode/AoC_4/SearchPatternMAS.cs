@@ -35,6 +35,11 @@ namespace AoC_4
             }
         }
 
+        public int GetMASPattern()
+        {
+            return 0;
+        }
+
         private Point GetLowerRightCoord(Point coordinate)
         {
             return new Point(++coordinate.X, ++coordinate.Y);
@@ -42,7 +47,7 @@ namespace AoC_4
 
         private Point GetUpperLeftCoord(Point coordinate)
         {
-            return new Point(++coordinate.X, --coordinate.Y);
+            return new Point(--coordinate.X, --coordinate.Y);
         }
 
         private Point GetLowerLeftCoord(Point coordinate)

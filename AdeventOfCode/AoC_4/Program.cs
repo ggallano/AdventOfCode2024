@@ -17,6 +17,8 @@ namespace AoC_4
             FillLetterList(matches);
 
             SearchPatternMAS searchPattern = new SearchPatternMAS(_letterList);
+            searchPattern.StartSearch();
+            searchPattern.GetMASPattern();
         }
 
         private static void FillLetterList(MatchCollection matches)
