@@ -2,7 +2,7 @@
 
 namespace AoC_4
 {
-    public class SearchPatternXMAS : SearchPattern
+    public class SearchPatternXMAS : AbstractSearchPattern
     {
         string stringPattern = "XMAS";
 

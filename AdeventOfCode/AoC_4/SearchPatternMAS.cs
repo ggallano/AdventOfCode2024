@@ -2,7 +2,7 @@
 
 namespace AoC_4
 {
-    public class SearchPatternMAS : SearchPattern
+    public class SearchPatternMAS : AbstractSearchPattern
     {
         List<string> stringPatterns = new List<string>() { "ASMMS", "AMSSM", "AMSMS", "ASMSM" };
 

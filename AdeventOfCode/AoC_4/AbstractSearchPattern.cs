@@ -3,7 +3,7 @@ using System.Drawing;
 
 namespace AoC_4
 {
-    public abstract class SearchPattern
+    public abstract class AbstractSearchPattern
     {
         public List<Letter> letterList;
         public List<Point> searchedPoints;
