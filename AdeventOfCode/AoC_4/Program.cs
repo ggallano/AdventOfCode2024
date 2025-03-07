@@ -7,7 +7,7 @@ namespace AoC_4
 {
     internal class Program
     {
-        private const string _inputPath = @"C:\Users\ggallan2\Documents\Project_Code\_Github\AdventOfCOde\AdeventOfCode\AoC_4\input\input.txt";
+        private const string _inputPath = @"C:\Users\ggallan2\Documents\Project_Code\_Github\AdventOfCOde\AdeventOfCode\AoC_4\input\ex_input.txt";
         static List<Letter> _letterList = new List<Letter>();
 
         static void Main(string[] args)
