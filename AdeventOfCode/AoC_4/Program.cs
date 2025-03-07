@@ -14,14 +14,14 @@ namespace AoC_4
         {
             var inputText = InputFileReader.ReadText(_inputPath);
             MatchCollection matches = ExtractCharacterLetter(inputText);
-            FillLetterList(matches);
+            _letterList = FillLetterList(matches);
 
-            SearchPatternMAS searchPattern = new SearchPatternMAS(_letterList);
+            SearchPattern searchPattern = new SearchPatternMAS(_letterList);
             searchPattern.StartSearch();
             Console.WriteLine(searchPattern.GetMASPattern());
         }
 
-        private static void FillLetterList(MatchCollection matches)
+        private static List<Letter> FillLetterList(MatchCollection matches)
         {
             int x = 0;
             int y = 0;
@@ -36,6 +36,8 @@ namespace AoC_4
 
                 _letterList.Add(new Letter(new Point(x++, y), matches[i].Value));
             }
+
+            return _letterList;
         }
 
         private static MatchCollection ExtractCharacterLetter(string inputText)
