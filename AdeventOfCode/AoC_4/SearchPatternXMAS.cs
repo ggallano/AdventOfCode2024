@@ -2,11 +2,9 @@
 
 namespace AoC_4
 {
-    public class SearchPatternMAS : SearchPattern
+    public class SearchPatternXMAS : SearchPattern
     {
-        List<string> stringPatterns = new List<string>() { "ASMMS", "AMSSM", "AMSMS", "ASMSM" };
-
-        public SearchPatternMAS(List<Letter> letterList)
+        public SearchPatternXMAS()
         {
             letterList = letterList;
             searchedPoints = new List<Point>();
@@ -14,38 +12,14 @@ namespace AoC_4
 
         public override int GetMASPattern()
         {
-            int totalCount = 0;
-            string stringPattern = string.Empty;
-            for (int i = 0; i < searchedPoints.Count; i += 5)
-            {
-                for (int j = i; j < i + 5; j++)
-                {
-                    var letter = letterList.Where(x => x.Coordinate == searchedPoints[j]);
-
-                    foreach (var character in letter)
-                    {
-                        Console.WriteLine($"coordinates:{searchedPoints[j]} : {character.Text}");
-                        stringPattern += character.Text;
-                    }
-
-                    if (stringPatterns.Contains(stringPattern))
-                    {
-                        totalCount++;
-                        Console.WriteLine($"Total Count: {totalCount}");
-                    }
-                }
-
-                stringPattern = string.Empty;
-
-            }
-            return totalCount;
+            throw new NotImplementedException();
         }
 
         public override void StartSearch()
         {
             foreach (var letter in letterList)
             {
-                if (letter.Text != "A")
+                if (letter.Text != "X")
                     continue;
 
 
