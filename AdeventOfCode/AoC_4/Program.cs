@@ -7,7 +7,7 @@ namespace AoC_4
 {
     internal class Program
     {
-        private const string _inputPath = @"C:\Users\ggallan2\Documents\Project_Code\_Github\AdventOfCOde\AdeventOfCode\AoC_4\input\ex1_input.txt";
+        private const string _inputPath = @"C:\Users\ggallan2\Documents\Project_Code\_Github\AdventOfCOde\AdeventOfCode\AoC_4\input\input.txt";
         static List<Letter> _letterList = new List<Letter>();
 
         static void Main(string[] args)
@@ -27,8 +27,8 @@ namespace AoC_4
             int y = 0;
             for (int i = 0; i < matches.Count; i++)
             {
-                //if (i % 140 == 0 && i > 0)
-                if (i % 10 == 0 && i > 0)
+                if (i % 140 == 0 && i > 0)
+                //if (i % 10 == 0 && i > 0)
                 {
                     x = 0;
                     y++;
