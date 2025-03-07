@@ -9,6 +9,7 @@ namespace AoC_4
 {
     public class SearchPatternMAS
     {
+        List<string> stringPatterns = new List<string>() { "ASM", "AMS" };
         List<Point> searchedPoints;
         public SearchPatternMAS(List<Letter> letterList)
         {
@@ -25,6 +26,8 @@ namespace AoC_4
                 if (letter.Text != "A")
                     continue;
 
+                //Console.WriteLine($"A coordinates:{letter.Coordinate}");
+
                 searchedPoints.Add(letter.Coordinate);
                 searchedPoints.Add(GetUpperRightCoord(letter.Coordinate));
                 searchedPoints.Add(GetLowerLeftCoord(letter.Coordinate));
@@ -35,9 +38,42 @@ namespace AoC_4
             }
         }
 
+        
         public int GetMASPattern()
         {
-            return 0;
+            int count = 0;
+            int totalCount = 0;
+            string stringPattern = string.Empty;
+            for (int i = 0; i < searchedPoints.Count; i += 3)
+            {
+                for (int j = i; j < i + 3; j++)
+                {
+                    var letter = LetterList.Where(x => x.Coordinate == searchedPoints[j]);
+
+                    foreach (var character in letter)
+                    {
+                        Console.WriteLine($"coordinates:{searchedPoints[j]} : {character.Text}");
+                        stringPattern += character.Text;
+                    }
+
+                    if (stringPatterns.Contains(stringPattern))
+                    {
+                        count++;
+                    }
+                }
+
+                if (count == 2)
+                {
+                    totalCount++;
+                    count = 0;
+                    Console.WriteLine($"Total Count: {totalCount}");
+                    Console.WriteLine($"");
+                }
+
+                stringPattern = string.Empty;
+                
+            }
+            return totalCount;
         }
 
         private Point GetLowerRightCoord(Point coordinate)
