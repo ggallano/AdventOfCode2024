@@ -4,9 +4,11 @@ namespace AoC_4
 {
     public class SearchPatternXMAS : SearchPattern
     {
-        public SearchPatternXMAS()
+        string stringPattern = "XMAS";
+
+        public SearchPatternXMAS(List<Letter> letterList)
         {
-            letterList = letterList;
+            this.letterList = letterList;
             searchedPoints = new List<Point>();
         }
 

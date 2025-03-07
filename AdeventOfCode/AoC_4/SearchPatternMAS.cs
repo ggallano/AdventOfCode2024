@@ -8,7 +8,7 @@ namespace AoC_4
 
         public SearchPatternMAS(List<Letter> letterList)
         {
-            letterList = letterList;
+            this.letterList = letterList;
             searchedPoints = new List<Point>();
         }
 
