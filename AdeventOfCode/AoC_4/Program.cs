@@ -16,7 +16,7 @@ namespace AoC_4
             MatchCollection matches = ExtractCharacterLetter(inputText);
             _letterList = FillLetterList(matches);
 
-            AbstractSearchPattern searchPattern = new SearchPatternXMAS(_letterList);
+            AbstractSearchPattern searchPattern = new SearchPatternMAS(_letterList);
             searchPattern.StartSearch();
             Console.WriteLine(searchPattern.GetPattern());
         }

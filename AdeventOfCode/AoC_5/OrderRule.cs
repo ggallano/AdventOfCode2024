@@ -10,5 +10,11 @@ namespace AoC_5
     {
         int TargetNum { get; set; }
         int RuleNum { get; set; }
+
+        public OrderRule(int targetNum, int ruleNum)
+        {
+            this.TargetNum = targetNum;
+            this.RuleNum = ruleNum;
+        }
     }
 }
