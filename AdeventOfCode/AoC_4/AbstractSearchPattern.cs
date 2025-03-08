@@ -7,7 +7,7 @@ namespace AoC_4
     {
         public List<Letter> letterList;
         public List<Point> searchedPoints;
-        public abstract int GetMASPattern();
+        public abstract int GetPattern();
         public abstract void StartSearch();
     }
 }

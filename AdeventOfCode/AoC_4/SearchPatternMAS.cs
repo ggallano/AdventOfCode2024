@@ -12,7 +12,7 @@ namespace AoC_4
             searchedPoints = new List<Point>();
         }
 
-        public override int GetMASPattern()
+        public override int GetPattern()
         {
             int totalCount = 0;
             string stringPattern = string.Empty;

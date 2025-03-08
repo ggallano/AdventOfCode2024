@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using System.Net;
 
 namespace AoC_4
 {
@@ -12,9 +13,32 @@ namespace AoC_4
             searchedPoints = new List<Point>();
         }
 
-        public override int GetMASPattern()
+        public override int GetPattern()
         {
-            throw new NotImplementedException();
+            int totalCount = 0;
+            string tempString = string.Empty;
+            foreach (var item in searchedPoints)
+            {
+                var letter = letterList.Where(x => x.Coordinate == item);
+
+                foreach (var character in letter)
+                {
+                    if (character.Text == "X")
+                        tempString = string.Empty;
+
+                    tempString += character.Text;
+                }
+
+                if (stringPattern.Equals(tempString))
+                {
+                    totalCount++;
+                    Console.WriteLine($"Total Count: {totalCount}");
+
+                    tempString = string.Empty;
+                }
+            }
+
+            return totalCount;
         }
 
         public override void StartSearch()
@@ -24,32 +48,95 @@ namespace AoC_4
                 if (letter.Text != "X")
                     continue;
 
-
-                searchedPoints.Add(letter.Coordinate);
-                searchedPoints.Add(GetUpperRightCoord(letter.Coordinate));
-                searchedPoints.Add(GetLowerLeftCoord(letter.Coordinate));
-                searchedPoints.Add(GetUpperLeftCoord(letter.Coordinate));
-                searchedPoints.Add(GetLowerRightCoord(letter.Coordinate));
+                searchedPoints.AddRange(GetUpperCoord(letter.Coordinate));
+                searchedPoints.AddRange(GetUpperRightCoord(letter.Coordinate));
+                searchedPoints.AddRange(GetRightCoord(letter.Coordinate));
+                searchedPoints.AddRange(GetLowerLeftCoord(letter.Coordinate));
+                searchedPoints.AddRange(GetLowerCoord(letter.Coordinate));
+                searchedPoints.AddRange(GetLowerRightCoord(letter.Coordinate));
+                searchedPoints.AddRange(GetLeftCoord(letter.Coordinate));
+                searchedPoints.AddRange(GetUpperLeftCoord(letter.Coordinate));
+                
             }
         }
 
-        private Point GetLowerLeftCoord(Point coordinate)
+        private List<Point> GetLeftCoord(Point coordinate)
         {
-            return new Point(--coordinate.X, ++coordinate.Y);
+            List<Point> tempList = new List<Point>();
+            for (int i = 0; i < 4; i++)
+            {
+                tempList.Add(new Point(coordinate.X--, coordinate.Y));
+            }
+            return tempList;
         }
 
-        private Point GetLowerRightCoord(Point coordinate)
+        private List<Point> GetLowerCoord(Point coordinate)
         {
-            return new Point(++coordinate.X, ++coordinate.Y);
+            List<Point> tempList = new List<Point>();
+            for (int i = 0; i < 4; i++)
+            {
+                tempList.Add(new Point(coordinate.X, coordinate.Y++));
+            }
+            return tempList;
         }
 
-        private Point GetUpperLeftCoord(Point coordinate)
+        private List<Point> GetRightCoord(Point coordinate)
         {
-            return new Point(--coordinate.X, --coordinate.Y);
+            List<Point> tempList = new List<Point>();
+            for (int i = 0; i < 4; i++)
+            {
+                tempList.Add(new Point(coordinate.X++, coordinate.Y));
+            }
+            return tempList;
         }
-        private Point GetUpperRightCoord(Point coordinate)
+
+        private List<Point> GetUpperCoord(Point coordinate)
         {
-            return new Point(++coordinate.X, --coordinate.Y);
+            List<Point> tempList = new List<Point>();
+            for (int i = 0; i < 4; i++)
+            {
+                tempList.Add(new Point(coordinate.X, coordinate.Y--));
+            }
+            return tempList;
+        }
+
+        private List<Point> GetLowerLeftCoord(Point coordinate)
+        {
+            List<Point> tempList = new List<Point>();
+            for (int i = 0; i < 4; i++)
+            {
+                tempList.Add(new Point(coordinate.X--, coordinate.Y++));
+            }
+            return tempList;
+        }
+
+        private List<Point> GetLowerRightCoord(Point coordinate)
+        {
+            List<Point> tempList = new List<Point>();
+            for (int i = 0; i < 4; i++)
+            {
+                tempList.Add(new Point(coordinate.X++, coordinate.Y++));
+            }
+            return tempList;
+        }
+
+        private List<Point> GetUpperLeftCoord(Point coordinate)
+        {
+            List<Point> tempList = new List<Point>();
+            for (int i = 0; i < 4; i++)
+            {
+                tempList.Add(new Point(coordinate.X--, coordinate.Y--));
+            }
+            return tempList;
+        }
+        private List<Point> GetUpperRightCoord(Point coordinate)
+        {
+            List<Point> tempList = new List<Point>();
+            for (int i = 0; i < 4; i++)
+            {
+                tempList.Add(new Point(coordinate.X++, coordinate.Y--));
+            }
+            return tempList;
         }
     }
 }

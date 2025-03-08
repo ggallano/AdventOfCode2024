@@ -7,7 +7,7 @@ namespace AoC_4
 {
     internal class Program
     {
-        private const string _inputPath = @"C:\Users\ggallan2\Documents\Project_Code\_Github\AdventOfCOde\AdeventOfCode\AoC_4\input\ex_input.txt";
+        private const string _inputPath = @".\input\input2.txt";
         static List<Letter> _letterList = new List<Letter>();
 
         static void Main(string[] args)
@@ -16,9 +16,9 @@ namespace AoC_4
             MatchCollection matches = ExtractCharacterLetter(inputText);
             _letterList = FillLetterList(matches);
 
-            AbstractSearchPattern searchPattern = new SearchPatternMAS(_letterList);
+            AbstractSearchPattern searchPattern = new SearchPatternXMAS(_letterList);
             searchPattern.StartSearch();
-            Console.WriteLine(searchPattern.GetMASPattern());
+            Console.WriteLine(searchPattern.GetPattern());
         }
 
         private static List<Letter> FillLetterList(MatchCollection matches)
