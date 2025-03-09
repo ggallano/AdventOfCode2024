@@ -8,8 +8,8 @@ namespace AoC_5
 {
     public class OrderRule
     {
-        int TargetNum { get; set; }
-        int RuleNum { get; set; }
+        public int TargetNum { get; set; }
+        public int RuleNum { get; set; }
 
         public OrderRule(int targetNum, int ruleNum)
         {
