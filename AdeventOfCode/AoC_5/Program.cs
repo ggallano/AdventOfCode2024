@@ -9,8 +9,11 @@ namespace AoC_5
         const string firstSecRegPattern = @"\d*(?=\|)|(?<=\|)\d*";
         const string secondSecRegPattern = @"(\d*\,)+\d*";
 
+        const string positiveLookBehind = @"(?<=61.*?)29"; // (?<={TargetNum}.*?){RuleNum}
+        const string positiveLookAhead = @"13(?=.*?47)"; // {RuleNum}(?=.*?{TargetNum})
+
         static List<OrderRule> _orderRules = new List<OrderRule>();
-        static List<string> _pageOrder = new List<string>();
+        static List<PageOrder> _pageOrder = new List<PageOrder>();
 
         static void Main(string[] args)
         {
@@ -24,9 +27,16 @@ namespace AoC_5
 
             matches = TextExtractor.ExtractText(inputText, secondSecRegPattern);
 
-            foreach (var item in matches)
+            foreach (Match item in matches)
             {
-                _pageOrder.Add(item.ToString());
+                PageOrder tempNums = new PageOrder();
+                foreach (var num in item.Value.Split(',').ToList())
+                {
+                    tempNums.PageNums.Add(num);
+                }
+                
+                tempNums.PageNum = item.Value;
+                _pageOrder.Add(tempNums);
             }
         }
     }
