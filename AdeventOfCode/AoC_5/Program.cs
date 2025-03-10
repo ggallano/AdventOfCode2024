@@ -13,7 +13,7 @@ namespace AoC_5
         const string positiveLookAhead = @"13(?=.*?47)"; // {RuleNum}(?=.*?{TargetNum})
 
         static List<OrderRule> _orderRules = new List<OrderRule>();
-        static List<PageOrder> _pageOrder = new List<PageOrder>();
+        static List<PageOrder> _pageOrders = new List<PageOrder>();
 
         static void Main(string[] args)
         {
@@ -36,7 +36,31 @@ namespace AoC_5
                 }
                 
                 tempNums.PageNum = item.Value;
-                _pageOrder.Add(tempNums);
+                _pageOrders.Add(tempNums);
+            }
+
+
+        }
+
+        static void SearchViolations()
+        {
+            //foreach (var rule in _orderRules)
+            //{
+            //    foreach (var page in _pageOrder)
+            //    {
+            //        if (Regex.IsMatch(page.PageNum, positiveLookBehind) || Regex.IsMatch(page.PageNum, positiveLookAhead))
+            //        {
+            //            Console.WriteLine($"Violation found on page {page.PageNum}");
+            //        }
+            //    }
+            //}
+
+            foreach (var pageOrder in _pageOrders)
+            {
+                foreach (var targetNum in pageOrder.PageNums)
+                {
+
+                }
             }
         }
     }
