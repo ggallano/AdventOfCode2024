@@ -16,15 +16,11 @@ namespace AoC_5
 
     internal class Program
     {
-        //private const string _inputPath = @".\input\input.txt";
-        private const string _inputPath = @".\input\ex_input2.txt";
+        private const string _inputPath = @".\input\input.txt";
         const string firstSecRegPattern = @"\d*(?=\|)|(?<=\|)\d*";
         const string positiveLookAhead = @"13(?=.*?47)";    // {RuleNum}(?=.*?{TargetNum})
         const string positiveLookBehind = @"(?<=61.*?)29";  // (?<={TargetNum}.*?){RuleNum}
         const string secondSecRegPattern = @"(\d*\,)+\d*";
-
-
-
 
         static List<OrderRule> _orderRules = new List<OrderRule>();
         static List<PageOrder> _pageOrders = new List<PageOrder>();
@@ -36,72 +32,41 @@ namespace AoC_5
 
             foreach (var pageOrder in tempList)
             {
-                Console.WriteLine($"Page Order: {pageOrder.PageNum} | Violation Count: {pageOrder.ViolationCount}");
-                foreach (var violation in pageOrder.ViolatedRules)
+                int i = 0;
+                do
                 {
-                    Console.WriteLine($"Violation: {violation.TargetNum} | {violation.RuleNum}");
-                    regExPattern = $@"(?<={violation.TargetNum}.*?){violation.RuleNum}";
-                    if (!Regex.IsMatch(pageOrder.CorrectedPageNum, regExPattern))
+                    Console.WriteLine();
+                    Console.WriteLine($"Pass No: {i + 1}");
+                    pageOrder.ViolatedRules.Clear();
+                    pageOrder.ViolationCount = SearchViolations(pageOrder);
+                    Console.WriteLine($"Violation Found: {pageOrder.ViolationCount}");
+
+                    if (pageOrder.ViolationCount == 0)
                     {
-                        pageOrder.PageNums.Swap(pageOrder.PageNums.IndexOf(violation.TargetNum), pageOrder.PageNums.IndexOf(violation.RuleNum));
-                        pageOrder.CorrectedPageNum = string.Empty;
-                        pageOrder.PageNums.ForEach(x => pageOrder.CorrectedPageNum += x + ",");
-                        Console.WriteLine(pageOrder.CorrectedPageNum);
+                        pageOrder.HasCurrentViolation = false;
+                        Console.WriteLine("No Violation Found!");
+                        break;
                     }
+
+                    Console.Write($"Page Order_O: ");
+                    pageOrder.PageNums.ForEach(x => Console.Write(x + ","));
+                    Console.WriteLine();
+                    foreach (var violation in pageOrder.ViolatedRules)
+                    {
+                        Console.WriteLine($"Violation: {violation.TargetNum} | {violation.RuleNum}");
+                        regExPattern = $@"(?<={violation.TargetNum}.*?){violation.RuleNum}";
+                        if (!Regex.IsMatch(pageOrder.CorrectedPageNum, regExPattern))
+                        {
+                            pageOrder.PageNums.Swap(pageOrder.PageNums.IndexOf(violation.TargetNum), pageOrder.PageNums.IndexOf(violation.RuleNum));
+                            pageOrder.CorrectedPageNum = string.Empty;
+                            pageOrder.PageNums.ForEach(x => pageOrder.CorrectedPageNum += x + ",");
+                            Console.WriteLine($"Page Order_N: {pageOrder.CorrectedPageNum}");
+                        }
+                    }
+                    pageOrder.PageNum = pageOrder.CorrectedPageNum;
+                    i++;
                 }
-
-                //do
-                //{
-                //    foreach (var violation in pageOrder.ViolatedRules)
-                //    {
-                //        Console.WriteLine($"Violation: {violation.TargetNum} | {violation.RuleNum}");
-
-                //        //regExPattern = $@"(?<={violation.TargetNum}.*?){violation.RuleNum}";
-                //        //if (Regex.IsMatch(pageOrder.CorrectedPageNum, regExPattern))
-                //        //{
-                //        //    pageOrder.RemoveViolatedRules.Add(violation);
-                //        //}
-
-                //        regExPattern = $@"(?<={violation.TargetNum}.*?){violation.RuleNum}";
-                //        if (!Regex.IsMatch(pageOrder.CorrectedPageNum, regExPattern))
-                //        {
-                //            pageOrder.PageNums.Swap(pageOrder.PageNums.IndexOf(violation.TargetNum), pageOrder.PageNums.IndexOf(violation.RuleNum));
-                //            pageOrder.CorrectedPageNum = string.Empty;
-                //            pageOrder.PageNums.ForEach(x => pageOrder.CorrectedPageNum += x + ",");
-                //            Console.WriteLine(pageOrder.CorrectedPageNum);
-                //            pageOrder.ViolationCount--;
-                //            pageOrder.RemoveViolatedRules.Add(violation);
-                //        }
-                //        else if (Regex.IsMatch(pageOrder.CorrectedPageNum, regExPattern))
-                //        {
-                //            pageOrder.RemoveViolatedRules.Add(violation);
-                //        }
-                //    }
-
-                //    pageOrder.ViolatedRules.RemoveAll(x => pageOrder.RemoveViolatedRules.Contains(x));
-                //    pageOrder.RemoveViolatedRules.Clear();
-                //    pageOrder.ViolationCount = pageOrder.ViolatedRules.Count;
-
-                //} while (pageOrder.ViolationCount > 0);
-
-                //foreach (var violation in pageOrder.ViolatedRules)
-                //{
-                //    Console.WriteLine($"Violation: {violation.TargetNum} | {violation.RuleNum}");
-                //    var regExPattern = $@"(?<={violation.TargetNum}.*?){violation.RuleNum}";
-                //    if (!Regex.IsMatch(pageOrder.CorrectedPageNum, regExPattern))
-                //    {
-                //        pageOrder.PageNums.Swap(pageOrder.PageNums.IndexOf(violation.TargetNum), pageOrder.PageNums.IndexOf(violation.RuleNum));
-                //        pageOrder.CorrectedPageNum = string.Empty;
-                //        pageOrder.PageNums.ForEach(x => pageOrder.CorrectedPageNum += x + ",");
-                //        Console.WriteLine(pageOrder.CorrectedPageNum);
-                //        pageOrder.RemoveViolatedRules.Add(violation);
-                //    }
-                //}
-
-                Console.Write("Corrected Page Order: ");
-                pageOrder.PageNums.ForEach(x => Console.Write(x + ","));
-                Console.WriteLine();
-                Console.WriteLine();
+                while (pageOrder.HasCurrentViolation);
             }
         }
 
@@ -136,6 +101,7 @@ namespace AoC_5
 
                 tempNums.PageNum = item.Value;
                 tempNums.HasViolation = false;
+                tempNums.HasCurrentViolation = false;
                 tempNums.ViolationCount = 0;
                 tempNums.CorrectedPageNum = tempNums.PageNum;
                 _pageOrders.Add(tempNums);
@@ -144,6 +110,8 @@ namespace AoC_5
             foreach (PageOrder pageOrder in _pageOrders)
             {
                 pageOrder.ViolationCount = SearchViolations(pageOrder);
+                if (pageOrder.ViolationCount > 0)
+                    pageOrder.HasViolation = true;
             }
 
             var sumMidNum = GetSumMidNum(false);
@@ -169,7 +137,7 @@ namespace AoC_5
                     if (Regex.IsMatch(pageOrder.PageNum, regExPattern))
                     {
                         violationCount++;
-                        pageOrder.HasViolation = true;
+                        pageOrder.HasCurrentViolation = true;
                         pageOrder.ViolatedRules.Add(orderRule);
                     }
                 }
