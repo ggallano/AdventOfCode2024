@@ -15,5 +15,6 @@ namespace AoC_5
         public int ViolationCount { get; set; }
         public int MidNum => PageNums[PageNums.Count / 2];
         public List<OrderRule> ViolatedRules = new List<OrderRule>();
+        public List<OrderRule> RemoveViolatedRules = new List<OrderRule>();
     }
 }
