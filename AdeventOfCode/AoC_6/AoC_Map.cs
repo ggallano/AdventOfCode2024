@@ -11,13 +11,35 @@ namespace AoC_6
     {
         private readonly int width;
         private readonly int height;
-        private readonly List<Obstacle> obstacles;
+        private char[,] grid;
 
-        public AoC_Map(int width, int height, List<Obstacle> obstacles) 
+        public AoC_Map(int width, int height) 
         {
             this.width = width;
             this.height = height;
-            this.obstacles = obstacles;
+            grid = new char[width, height];
+        }
+
+        public void PlaceCharacter(Character character)
+        {
+            int x = character.Position.X;
+            int y = character.Position.Y;
+            if (x >= 0 && x < width && y >= 0 && y < height)
+            {
+                grid[y, x] = '^';
+            }
+        }
+
+        public void Display()
+        {
+            for (int y = 0; y < height; y++)
+            {
+                for (int x = 0; x < width; x++)
+                {
+                    Console.Write(grid[y, x] + " ");
+                }
+                Console.WriteLine();
+            }
         }
     }
 }
