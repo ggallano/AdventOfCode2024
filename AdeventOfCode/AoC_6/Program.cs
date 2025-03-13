@@ -28,6 +28,15 @@ namespace AoC_6
             map.PlaceCharacter(character);
             map.PlaceObstacles(hashtagObstacles);
             map.Display();
+
+            Console.WriteLine();
+
+            character.Move("up");
+            map.PlaceCharacter(character);
+            character.Move("right");
+            map.PlaceCharacter(character);
+
+            map.Display();
         }
 
         private static List<HashtagObstacle> FillHashtagObstacleList(MatchCollection matches)
