@@ -18,6 +18,14 @@ namespace AoC_6
             this.width = width;
             this.height = height;
             grid = new char[width, height];
+
+            for (int y = 0; y < height; y++)
+            {
+                for (int x = 0; x < width; x++)
+                {
+                    grid[x, y] = '.';
+                }
+            }
         }
 
         public void PlaceCharacter(Character character)
@@ -26,7 +34,20 @@ namespace AoC_6
             int y = character.Position.Y;
             if (x >= 0 && x < width && y >= 0 && y < height)
             {
-                grid[y, x] = '^';
+                grid[x, y] = '^';
+            }
+        }
+
+        public void PlaceObstacles(List<HashtagObstacle> obstacles)
+        {
+            foreach (HashtagObstacle obstacle in obstacles)
+            {
+                int x = obstacle.Position.X;
+                int y = obstacle.Position.Y;
+                if (x >= 0 && x < width && y >= 0 && y < height)
+                {
+                    grid[x, y] = '#';
+                }
             }
         }
 
@@ -36,7 +57,7 @@ namespace AoC_6
             {
                 for (int x = 0; x < width; x++)
                 {
-                    Console.Write(grid[y, x] + " ");
+                    Console.Write(grid[x, y] + " ");
                 }
                 Console.WriteLine();
             }

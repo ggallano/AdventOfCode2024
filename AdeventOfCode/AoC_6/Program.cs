@@ -10,6 +10,8 @@ namespace AoC_6
         private const string _inputPath = @".\input\ex_input.txt";
         private static List<HashtagObstacle> hashtagObstacles = new List<HashtagObstacle>();
         private static Character character;
+        private static AoC_Map map;
+        static int length = 12;    // subject to change based from the input text file length
 
         static void Main(string[] args)
         {
@@ -21,14 +23,18 @@ namespace AoC_6
             Point charPosition = GetInitialCharPosition(matches);
 
             character = new Character(charPosition);
+            map = new AoC_Map(10, 10);
+
+            map.PlaceCharacter(character);
+            map.PlaceObstacles(hashtagObstacles);
+            map.Display();
         }
 
         private static List<HashtagObstacle> FillHashtagObstacleList(MatchCollection matches)
         {
-            int y = 0;
             foreach (Match item in matches)
             {
-                hashtagObstacles.Add(new HashtagObstacle(new Point(item.Index, y++), "Hashtag", item.Value));
+                hashtagObstacles.Add(new HashtagObstacle(new Point(item.Index % length, (item.Index / length)), "Hashtag", item.Value));
             }
 
             return hashtagObstacles;
@@ -36,7 +42,6 @@ namespace AoC_6
 
         private static Point GetInitialCharPosition(MatchCollection matches)
         {
-            int length = 12;    // subject to change based from the input text file length
             foreach (Match item in matches)
             {
                 if (item.Value == "^")
