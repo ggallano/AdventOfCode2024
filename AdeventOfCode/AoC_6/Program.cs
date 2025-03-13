@@ -10,8 +10,6 @@ namespace AoC_6
         const string _inputPath = @".\input\ex_input.txt";
         static Character character;
         static List<HashtagObstacle> hashtagObstacles = new List<HashtagObstacle>();
-
-
         static AoC_Map map;
 
         static int offset = 2;  // offset for the new line character "\r\n"
@@ -62,13 +60,37 @@ namespace AoC_6
 
             character.Direction = direction;
             character.Move(direction);
-            
+
             if (map.CheckValidMove(character.Position))
                 map.PlaceCharacter(character);
             else
+            {
                 character.MoveUndo(direction);
+                ChangeDirection(direction);
+            }
 
             map.Display();
+        }
+
+        static void ChangeDirection(string direction)
+        {
+            switch (direction)
+            {
+                case "up":
+                    character.Direction = "right";
+                    break;
+                case "right":
+                    character.Direction = "down";
+                    break;
+                case "down":
+                    character.Direction = "left";
+                    break;
+                case "left":
+                    character.Direction = "up";
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }
