@@ -7,37 +7,16 @@ namespace AoC_6
 {
     internal class Program
     {
-        private const string _inputPath = @".\input\ex_input.txt";
-        private static List<HashtagObstacle> hashtagObstacles = new List<HashtagObstacle>();
-        private static Character character;
-        private static AoC_Map map;
-        static int length = 12;    // subject to change based from the input text file length
+        const string _inputPath = @".\input\ex_input.txt";
+        static Character character;
+        static List<HashtagObstacle> hashtagObstacles = new List<HashtagObstacle>();
 
-        static void Main(string[] args)
-        {
-            var inputText = InputFileReader.ReadText(_inputPath);
-            MatchCollection matches = TextExtractor.ExtractText(inputText, @"\#");
-            hashtagObstacles = FillHashtagObstacleList(matches);
 
-            matches = TextExtractor.ExtractText(inputText, @"\^");
-            Point charPosition = GetInitialCharPosition(matches);
+        static AoC_Map map;
 
-            character = new Character(charPosition);
-            map = new AoC_Map(10, 10);
-
-            map.PlaceCharacter(character);
-            map.PlaceObstacles(hashtagObstacles);
-            map.Display();
-
-            Console.WriteLine();
-
-            character.Move("up");
-            map.PlaceCharacter(character);
-            character.Move("right");
-            map.PlaceCharacter(character);
-
-            map.Display();
-        }
+        static int offset = 2;  // offset for the new line character "\r\n"
+        static int size = 10;  // actiual input text file length
+        static int length = size + offset;
 
         private static List<HashtagObstacle> FillHashtagObstacleList(MatchCollection matches)
         {
@@ -59,6 +38,37 @@ namespace AoC_6
                 }
             }
             return new Point(0, 0);
+        }
+
+        static void Main(string[] args)
+        {
+            var inputText = InputFileReader.ReadText(_inputPath);
+            MatchCollection matches = TextExtractor.ExtractText(inputText, @"\#");
+            hashtagObstacles = FillHashtagObstacleList(matches);
+
+            matches = TextExtractor.ExtractText(inputText, @"\^");
+            Point charPosition = GetInitialCharPosition(matches);
+
+            character = new Character(charPosition);
+            map = new AoC_Map(size, size);
+
+            map.PlaceCharacter(character);
+            map.PlaceObstacles(hashtagObstacles);
+            map.Display();
+
+            Console.WriteLine();
+
+            var direction = "up";
+
+            character.Direction = direction;
+            character.Move(direction);
+            
+            if (map.CheckValidMove(character.Position))
+                map.PlaceCharacter(character);
+            else
+                character.MoveUndo(direction);
+
+            map.Display();
         }
     }
 }

@@ -12,9 +12,13 @@ namespace AoC_6
         public Character(Point position)
         {
             this.Position = position;
+            this.TrackMoveList = new List<Point>();
         }
+        public string Direction { get; set; }
 
-        public Point Position { get; set; } 
+        public Point Position { get; set; }
+
+        public List<Point> TrackMoveList { get; set; }
 
         public void Move(string direction)
         {
@@ -35,6 +39,30 @@ namespace AoC_6
                     break;
                 case "right":
                     position.X += 1;
+                    Position = position;
+                    break;
+            }
+        }
+
+        public void MoveUndo(string direction)
+        {
+            var position = Position;
+            switch (direction)
+            {
+                case "up":
+                    position.Y += 1;
+                    Position = position;
+                    break;
+                case "down":
+                    position.Y -= 1;
+                    Position = position;
+                    break;
+                case "left":
+                    position.X += 1;
+                    Position = position;
+                    break;
+                case "right":
+                    position.X -= 1;
                     Position = position;
                     break;
             }

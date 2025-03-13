@@ -62,5 +62,22 @@ namespace AoC_6
                 Console.WriteLine();
             }
         }
+
+        public bool CheckValidMove(Point position)
+        {
+            int x = position.X;
+            int y = position.Y;
+
+            if (!(x <= 0 || x < width))
+                return false;
+            
+            if (!(y <= 0 || y < height))
+                return false;
+
+            if (grid[x, y] == '.')
+                return true;
+
+            return false;
+        }
     }
 }
