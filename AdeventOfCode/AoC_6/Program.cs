@@ -7,13 +7,13 @@ namespace AoC_6
 {
     internal class Program
     {
-        const string _inputPath = @".\input\ex_input.txt";
+        const string _inputPath = @".\input\input.txt";
         static Character character;
         static List<HashtagObstacle> hashtagObstacles = new List<HashtagObstacle>();
         static AoC_Map map;
 
         static int offset = 2;  // offset for the new line character "\r\n"
-        static int size = 10;  // actiual input text file length
+        static int size = 130;  // actiual input text file length
         static int length = size + offset;
 
         private static List<HashtagObstacle> FillHashtagObstacleList(MatchCollection matches)
@@ -58,38 +58,51 @@ namespace AoC_6
 
             var direction = "up";
 
-            character.Direction = direction;
-            character.Move(direction);
-
-            if (map.CheckValidMove(character.Position))
-                map.PlaceCharacter(character);
-            else
+            int invalidMoveCount = 0;
+            do
             {
-                character.MoveUndo(direction);
-                ChangeDirection(direction);
-            }
+                character.Direction = direction;
+                character.Move(direction);
 
+                if (map.CheckValidMove(character.Position)) // x:121 y:6
+                {
+                    map.PlaceCharacter(character);
+                    invalidMoveCount = 0;
+                    Console.WriteLine($"Valid Coordination: {character.Position}, Direction:{character.Direction}");
+                }
+                else
+                {
+                    map.Display();
+                    character.MoveUndo(direction);
+                    Console.Write($"Invalid direction {direction}, ");
+                    direction = ChangeDirection(direction);
+                    character.Direction = direction;
+                    Console.WriteLine($"Change direction to {character.Direction}");
+                    
+                    invalidMoveCount++;
+                }
+
+                //map.Display();
+            } while (invalidMoveCount <= 1);
+
+            Console.WriteLine(character.TrackMoveList.Distinct().ToList().Count());
             map.Display();
         }
 
-        static void ChangeDirection(string direction)
+        static string ChangeDirection(string direction)
         {
             switch (direction)
             {
                 case "up":
-                    character.Direction = "right";
-                    break;
+                    return "right";
                 case "right":
-                    character.Direction = "down";
-                    break;
+                    return "down";
                 case "down":
-                    character.Direction = "left";
-                    break;
+                    return "left";
                 case "left":
-                    character.Direction = "up";
-                    break;
+                    return "up";
                 default:
-                    break;
+                    return "up";
             }
         }
     }

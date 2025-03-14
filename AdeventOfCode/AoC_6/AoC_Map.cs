@@ -13,7 +13,7 @@ namespace AoC_6
         private readonly int height;
         private char[,] grid;
 
-        public AoC_Map(int width, int height) 
+        public AoC_Map(int width, int height)
         {
             this.width = width;
             this.height = height;
@@ -35,7 +35,11 @@ namespace AoC_6
             if (x >= 0 && x < width && y >= 0 && y < height)
             {
                 grid[x, y] = '^';
+                if (character.TrackMoveList.Count > 0)
+                    grid[character.TrackMoveList.Last().X, character.TrackMoveList.Last().Y] = 'X';
             }
+
+            character.TrackMoveList.Add(character.Position);
         }
 
         public void PlaceObstacles(List<HashtagObstacle> obstacles)
@@ -57,10 +61,11 @@ namespace AoC_6
             {
                 for (int x = 0; x < width; x++)
                 {
-                    Console.Write(grid[x, y] + " ");
+                    Console.Write(grid[x, y] + "");
                 }
                 Console.WriteLine();
             }
+            Console.WriteLine();
         }
 
         public bool CheckValidMove(Point position)
@@ -68,13 +73,19 @@ namespace AoC_6
             int x = position.X;
             int y = position.Y;
 
-            if (!(x <= 0 || x < width))
-                return false;
-            
-            if (!(y <= 0 || y < height))
+            if (x < 0 || y < 0)
                 return false;
 
-            if (grid[x, y] == '.')
+            if (x >= width || y >= height)
+                return false;
+
+            //if (!(x <= 0 || x < width))
+            //    return false;
+
+            //if (!(y <= 0 || y < height))
+            //    return false;
+
+            if ((grid[x, y] == '.') || (grid[x, y] == '^') || (grid[x, y] == 'X'))
                 return true;
 
             return false;

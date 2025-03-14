@@ -13,6 +13,8 @@ namespace AoC_6
         {
             this.Position = position;
             this.TrackMoveList = new List<Point>();
+
+            //TrackMoveList.Add(position);
         }
         public string Direction { get; set; }
 
