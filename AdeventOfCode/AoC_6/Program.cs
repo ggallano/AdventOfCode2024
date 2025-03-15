@@ -50,7 +50,7 @@ namespace AoC_6
             Point charPosition = GetInitialCharPosition(matches);
 
             character = new Character(charPosition);
-            map = new AoC_Map(size, size);
+            map = new AoC_Map(size, size, export);
 
             map.PlaceCharacter(character);
             map.PlaceObstacles(hashtagObstacles);
@@ -82,8 +82,6 @@ namespace AoC_6
                     Console.WriteLine($"Change direction to {character.Direction}");
                     
                     invalidMoveCount++;
-
-                    export.ExportText("asd");
                 }
 
                 //map.Display();

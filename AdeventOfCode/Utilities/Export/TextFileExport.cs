@@ -9,16 +9,22 @@ namespace Utilities.Export
 {
     public class TextFileExport : IFileExporterStrategy
     {
+        string filePath = $@"{System.AppDomain.CurrentDomain.BaseDirectory}\output.txt";
+
         public void Export(StringBuilder texts)
         {
-            //Console.WriteLine(System.AppDomain.CurrentDomain.BaseDirectory);
-            File.WriteAllText($@"{System.AppDomain.CurrentDomain.BaseDirectory}\output\output.txt", texts.ToString());
+            if (!File.Exists(filePath))
+                File.Create(filePath).Close();
+
+            File.AppendAllText(filePath, texts.ToString());
         }
 
         public void Export(string text)
         {
-            //Console.WriteLine(System.AppDomain.CurrentDomain.BaseDirectory);
-            File.WriteAllText($@"{System.AppDomain.CurrentDomain.BaseDirectory}\output\output.txt", text);
+            if (!File.Exists(filePath))
+                File.Create(filePath).Close();
+
+            File.AppendAllText(filePath, text);
         }
     }
 }

@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Utilities.Export;
 
 namespace AoC_6
 {
@@ -13,8 +14,11 @@ namespace AoC_6
         private readonly int height;
         private char[,] grid;
 
-        public AoC_Map(int width, int height)
+        private FileExporter export;
+
+        public AoC_Map(int width, int height, FileExporter export)
         {
+            this.export = export;
             this.width = width;
             this.height = height;
             grid = new char[width, height];
