@@ -2,11 +2,13 @@
 using System.Net;
 using System.Text.RegularExpressions;
 using Utilities;
+using Utilities.Export;
 
 namespace AoC_6
 {
     internal class Program
     {
+        static FileExporter export = new FileExporter(new TextFileExport());
         const string _inputPath = @".\input\input.txt";
         static Character character;
         static List<HashtagObstacle> hashtagObstacles = new List<HashtagObstacle>();
@@ -80,6 +82,8 @@ namespace AoC_6
                     Console.WriteLine($"Change direction to {character.Direction}");
                     
                     invalidMoveCount++;
+
+                    export.ExportText("asd");
                 }
 
                 //map.Display();
