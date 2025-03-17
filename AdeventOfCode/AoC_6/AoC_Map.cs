@@ -13,8 +13,9 @@ namespace AoC_6
         private readonly int width;
         private readonly int height;
         private char[,] grid;
+        private StringBuilder stringBuilder = new StringBuilder();
 
-        private FileExporter export;
+        public FileExporter export;
 
         public AoC_Map(int width, int height, FileExporter export)
         {
@@ -40,10 +41,18 @@ namespace AoC_6
             {
                 grid[x, y] = '^';
                 if (character.TrackMoveList.Count > 0)
-                    grid[character.TrackMoveList.Last().X, character.TrackMoveList.Last().Y] = 'X';
+                    if (character.Direction == "up" || character.Direction == "down")
+                    {
+                        grid[character.TrackMoveList.Last().X, character.TrackMoveList.Last().Y] = '|';
+                    }
+                    else
+                    {
+                        grid[character.TrackMoveList.Last().X, character.TrackMoveList.Last().Y] = '-';
+                    }
             }
 
             character.TrackMoveList.Add(character.Position);
+            stringBuilder.AppendLine($"Valid Coordination: {character.Position}, Direction:{character.Direction}");
         }
 
         public void PlaceObstacles(List<HashtagObstacle> obstacles)
@@ -66,10 +75,13 @@ namespace AoC_6
                 for (int x = 0; x < width; x++)
                 {
                     Console.Write(grid[x, y] + "");
+                    stringBuilder.Append(grid[x, y] + "");
                 }
                 Console.WriteLine();
+                stringBuilder.AppendLine("");
             }
             Console.WriteLine();
+            stringBuilder.AppendLine("");
         }
 
         public bool CheckValidMove(Point position)
@@ -89,10 +101,25 @@ namespace AoC_6
             //if (!(y <= 0 || y < height))
             //    return false;
 
-            if ((grid[x, y] == '.') || (grid[x, y] == '^') || (grid[x, y] == 'X'))
+            if ((grid[x, y] == '.') || (grid[x, y] == '^') || (grid[x, y] == 'X') || (grid[x, y] == '-') || (grid[x, y] == '|'))
                 return true;
 
             return false;
         }
+
+        internal void Export()
+        {
+            export.ExportText(stringBuilder.ToString());
+        }
+
+        enum CoordStatus
+        { 
+            Dot = '.',
+            Carrot = '^',
+            Hash = '#',
+            Underscore = '_',
+            X = 'X'
+        }
+
     }
 }

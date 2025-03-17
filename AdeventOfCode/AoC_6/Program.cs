@@ -22,7 +22,8 @@ namespace AoC_6
         {
             foreach (Match item in matches)
             {
-                hashtagObstacles.Add(new HashtagObstacle(new Point(item.Index % length, (item.Index / length)), "Hashtag", item.Value));
+                var point = new Point(item.Index % length, (item.Index / length));
+                hashtagObstacles.Add(new HashtagObstacle(point, "Hashtag", item.Value));
             }
 
             return hashtagObstacles;
@@ -86,6 +87,8 @@ namespace AoC_6
 
                 //map.Display();
             } while (invalidMoveCount <= 1);
+
+            map.Export();
 
             Console.WriteLine(character.TrackMoveList.Distinct().ToList().Count());
             map.Display();

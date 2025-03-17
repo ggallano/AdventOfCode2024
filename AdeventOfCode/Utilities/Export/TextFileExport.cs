@@ -15,6 +15,12 @@ namespace Utilities.Export
         {
             if (!File.Exists(filePath))
                 File.Create(filePath).Close();
+            else
+            {
+                File.Delete(filePath);
+                File.Create(filePath).Close();
+            }
+
 
             File.AppendAllText(filePath, texts.ToString());
         }
@@ -23,6 +29,11 @@ namespace Utilities.Export
         {
             if (!File.Exists(filePath))
                 File.Create(filePath).Close();
+            else
+            {
+                File.Delete(filePath);
+                File.Create(filePath).Close();
+            }
 
             File.AppendAllText(filePath, text);
         }
