@@ -101,7 +101,7 @@
                                 break;
                         }
 
-                        Console.WriteLine($"Valid Coordination: X={guardY},Y={guardX}, Direction:{stringDir}");
+                        Console.WriteLine("Valid Coordination: {" + "X=" + guardY + "," + "Y=" + guardX + "}, " + "Direction:" + stringDir);
                     }
                 }
             }
