@@ -73,9 +73,6 @@ namespace AoC_6
 
             map.PlaceCharacter(character);
             map.PlaceObstacles(hashtagObstacles);
-            //map.Display();
-
-            //Console.WriteLine();
 
             var direction = "up";
 
@@ -93,7 +90,6 @@ namespace AoC_6
                 }
                 else
                 {
-                    //map.Display();
                     character.MoveUndo(direction);
                     Console.Write($"Invalid direction {direction}, ");
                     direction = ChangeDirection(direction);
@@ -102,14 +98,11 @@ namespace AoC_6
                     
                     invalidMoveCount++;
                 }
-
-                //map.Display();
             } while (invalidMoveCount <= 1);
 
             map.Export();
 
             Console.WriteLine($"Distinct Positions: {character.TrackMoveList.Distinct().ToList().Count()}");
-            //map.Display();
         }
 
         private static void Map_OutofBouncePosition(Point position)
