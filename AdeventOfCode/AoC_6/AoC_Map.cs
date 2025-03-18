@@ -10,12 +10,11 @@ namespace AoC_6
 {
     public class AoC_Map
     {
-        private readonly int width;
-        private readonly int height;
-        private char[,] grid;
-        private StringBuilder stringBuilder = new StringBuilder();
-
         public FileExporter export;
+        public StringBuilder stringBuilder = new StringBuilder();
+        private readonly int height;
+        private readonly int width;
+        private char[,] grid;
 
         public AoC_Map(int width, int height, FileExporter export)
         {
@@ -31,6 +30,55 @@ namespace AoC_6
                     grid[x, y] = '.';
                 }
             }
+        }
+
+        public delegate void Notify(Point position);
+
+        public event Notify OutofBouncePosition;
+
+        enum CoordStatus
+        {
+            Dot = '.',
+            Carrot = '^',
+            Hash = '#',
+            Underscore = '_',
+            X = 'X'
+        }
+
+        public bool CheckValidMove(Point position)
+        {
+            int x = position.X;
+            int y = position.Y;
+
+            if (x < 0 || y < 0)
+                return false;
+
+            if (x >= width || y >= height)
+            {
+                OutofBouncePosition?.Invoke(position);
+                return false;
+            }
+
+            if ((grid[x, y] == '.') || (grid[x, y] == '^') || (grid[x, y] == 'X') || (grid[x, y] == '-') || (grid[x, y] == '|'))
+                return true;
+
+            return false;
+        }
+
+        public void Display()
+        {
+            for (int y = 0; y < height; y++)
+            {
+                for (int x = 0; x < width; x++)
+                {
+                    Console.Write(grid[x, y] + "");
+                    stringBuilder.Append(grid[x, y] + "");
+                }
+                Console.WriteLine();
+                stringBuilder.AppendLine("");
+            }
+            Console.WriteLine();
+            stringBuilder.AppendLine("");
         }
 
         public void PlaceCharacter(Character character)
@@ -51,8 +99,11 @@ namespace AoC_6
                     }
             }
 
-            character.TrackMoveList.Add(character.Position);
-            stringBuilder.AppendLine($"Valid Coordination: {character.Position}, Direction:{character.Direction}");
+            //if (!character.TrackMoveList.Contains(character.Position))
+            //{
+                character.TrackMoveList.Add(character.Position);
+                stringBuilder.AppendLine($"Valid Coordination: {character.Position}, Direction:{character.Direction}");
+            //}
         }
 
         public void PlaceObstacles(List<HashtagObstacle> obstacles)
@@ -67,59 +118,9 @@ namespace AoC_6
                 }
             }
         }
-
-        public void Display()
-        {
-            for (int y = 0; y < height; y++)
-            {
-                for (int x = 0; x < width; x++)
-                {
-                    Console.Write(grid[x, y] + "");
-                    stringBuilder.Append(grid[x, y] + "");
-                }
-                Console.WriteLine();
-                stringBuilder.AppendLine("");
-            }
-            Console.WriteLine();
-            stringBuilder.AppendLine("");
-        }
-
-        public bool CheckValidMove(Point position)
-        {
-            int x = position.X;
-            int y = position.Y;
-
-            if (x < 0 || y < 0)
-                return false;
-
-            if (x >= width || y >= height)
-                return false;
-
-            //if (!(x <= 0 || x < width))
-            //    return false;
-
-            //if (!(y <= 0 || y < height))
-            //    return false;
-
-            if ((grid[x, y] == '.') || (grid[x, y] == '^') || (grid[x, y] == 'X') || (grid[x, y] == '-') || (grid[x, y] == '|'))
-                return true;
-
-            return false;
-        }
-
         internal void Export()
         {
             export.ExportText(stringBuilder.ToString());
         }
-
-        enum CoordStatus
-        { 
-            Dot = '.',
-            Carrot = '^',
-            Hash = '#',
-            Underscore = '_',
-            X = 'X'
-        }
-
     }
 }

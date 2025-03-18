@@ -8,15 +8,33 @@ namespace AoC_6
 {
     internal class Program
     {
-        static FileExporter export = new FileExporter(new TextFileExport());
         const string _inputPath = @".\input\input.txt";
         static Character character;
+        static FileExporter export = new FileExporter(new TextFileExport());
         static List<HashtagObstacle> hashtagObstacles = new List<HashtagObstacle>();
+        static int invalidMoveCount = 0;
         static AoC_Map map;
 
         static int offset = 2;  // offset for the new line character "\r\n"
         static int size = 130;  // actiual input text file length
         static int length = size + offset;
+        static string ChangeDirection(string direction)
+        {
+            map.stringBuilder.AppendLine($"");
+            switch (direction)
+            {
+                case "up":
+                    return "right";
+                case "right":
+                    return "down";
+                case "down":
+                    return "left";
+                case "left":
+                    return "up";
+                default:
+                    return "up";
+            }
+        }
 
         private static List<HashtagObstacle> FillHashtagObstacleList(MatchCollection matches)
         {
@@ -40,7 +58,6 @@ namespace AoC_6
             }
             return new Point(0, 0);
         }
-
         static void Main(string[] args)
         {
             var inputText = InputFileReader.ReadText(_inputPath);
@@ -52,16 +69,17 @@ namespace AoC_6
 
             character = new Character(charPosition);
             map = new AoC_Map(size, size, export);
+            map.OutofBouncePosition += Map_OutofBouncePosition;
 
             map.PlaceCharacter(character);
             map.PlaceObstacles(hashtagObstacles);
-            map.Display();
+            //map.Display();
 
-            Console.WriteLine();
+            //Console.WriteLine();
 
             var direction = "up";
 
-            int invalidMoveCount = 0;
+            invalidMoveCount = 0;
             do
             {
                 character.Direction = direction;
@@ -75,7 +93,7 @@ namespace AoC_6
                 }
                 else
                 {
-                    map.Display();
+                    //map.Display();
                     character.MoveUndo(direction);
                     Console.Write($"Invalid direction {direction}, ");
                     direction = ChangeDirection(direction);
@@ -90,25 +108,13 @@ namespace AoC_6
 
             map.Export();
 
-            Console.WriteLine(character.TrackMoveList.Distinct().ToList().Count());
-            map.Display();
+            Console.WriteLine($"Distinct Positions: {character.TrackMoveList.Distinct().ToList().Count()}");
+            //map.Display();
         }
 
-        static string ChangeDirection(string direction)
+        private static void Map_OutofBouncePosition(Point position)
         {
-            switch (direction)
-            {
-                case "up":
-                    return "right";
-                case "right":
-                    return "down";
-                case "down":
-                    return "left";
-                case "left":
-                    return "up";
-                default:
-                    return "up";
-            }
+            invalidMoveCount = 2;
         }
     }
 }
