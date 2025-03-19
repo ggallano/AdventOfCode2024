@@ -91,12 +91,18 @@ namespace AoC_6
                 else
                 {
                     character.MoveUndo(direction);
+                    map.PlacePlusSymbol(character.Position);
                     Console.Write($"Invalid direction {direction}, ");
+                    
+                    map.PlacePlusSymbol(character.Position);
+
                     direction = ChangeDirection(direction);
                     character.Direction = direction;
                     Console.WriteLine($"Change direction to {character.Direction}");
                     
                     invalidMoveCount++;
+
+                    map.Display();
                 }
             } while (invalidMoveCount <= 1);
 

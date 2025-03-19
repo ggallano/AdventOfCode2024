@@ -106,6 +106,16 @@ namespace AoC_6
             //}
         }
 
+        public void PlacePlusSymbol(Point position)
+        {
+            int x = position.X;
+            int y = position.Y;
+            if (x >= 0 && x < width && y >= 0 && y < height)
+            {
+                grid[x, y] = '+';
+            }
+        }
+
         public void PlaceObstacles(List<HashtagObstacle> obstacles)
         {
             foreach (HashtagObstacle obstacle in obstacles)
