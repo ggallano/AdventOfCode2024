@@ -8,16 +8,18 @@ namespace AoC_6
 {
     internal class Program
     {
-        const string _inputPath = @".\input\input.txt";
+        const string _inputPath = @".\input\ex_input.txt";
         static Character character;
         static FileExporter export = new FileExporter(new TextFileExport());
         static List<HashtagObstacle> hashtagObstacles = new List<HashtagObstacle>();
         static int invalidMoveCount = 0;
+        
         static AoC_Map map;
 
         static int offset = 2;  // offset for the new line character "\r\n"
-        static int size = 130;  // actiual input text file length
+        static int size = 10;  // actiual input text file length
         static int length = size + offset;
+
         static string ChangeDirection(string direction)
         {
             map.stringBuilder.AppendLine($"");
@@ -71,6 +73,7 @@ namespace AoC_6
             map = new AoC_Map(size, size, export);
             map.OutofBouncePosition += Map_OutofBouncePosition;
 
+            map.InitialCharacterPosition(charPosition);
             map.PlaceCharacter(character);
             map.PlaceObstacles(hashtagObstacles);
 
@@ -82,31 +85,32 @@ namespace AoC_6
                 character.Direction = direction;
                 character.Move(direction);
 
-                if (map.CheckValidMove(character.Position)) // x:121 y:6
+                if (map.CheckValidMove(character.Position))
                 {
                     map.PlaceCharacter(character);
+                    map.PreviousPlaceCharacter(character);
                     invalidMoveCount = 0;
                     Console.WriteLine($"Valid Coordination: {character.Position}, Direction:{character.Direction}");
                 }
                 else
                 {
                     character.MoveUndo(direction);
-                    map.PlacePlusSymbol(character.Position);
                     Console.Write($"Invalid direction {direction}, ");
                     
-                    map.PlacePlusSymbol(character.Position);
-
                     direction = ChangeDirection(direction);
+                    
                     character.Direction = direction;
                     Console.WriteLine($"Change direction to {character.Direction}");
                     
+                    map.PlacePlusSymbol(character.TrackMoveList.Last());
                     invalidMoveCount++;
 
                     map.Display();
                 }
             } while (invalidMoveCount <= 1);
 
-            map.Export();
+            //map.Export();
+            map.Display();
 
             Console.WriteLine($"Distinct Positions: {character.TrackMoveList.Distinct().ToList().Count()}");
         }

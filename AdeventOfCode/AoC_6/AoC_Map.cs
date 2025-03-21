@@ -83,27 +83,8 @@ namespace AoC_6
 
         public void PlaceCharacter(Character character)
         {
-            int x = character.Position.X;
-            int y = character.Position.Y;
-            if (x >= 0 && x < width && y >= 0 && y < height)
-            {
-                grid[x, y] = '^';
-                if (character.TrackMoveList.Count > 0)
-                    if (character.Direction == "up" || character.Direction == "down")
-                    {
-                        grid[character.TrackMoveList.Last().X, character.TrackMoveList.Last().Y] = '|';
-                    }
-                    else
-                    {
-                        grid[character.TrackMoveList.Last().X, character.TrackMoveList.Last().Y] = '-';
-                    }
-            }
-
-            //if (!character.TrackMoveList.Contains(character.Position))
-            //{
-                character.TrackMoveList.Add(character.Position);
-                stringBuilder.AppendLine($"Valid Coordination: {character.Position}, Direction:{character.Direction}");
-            //}
+            character.TrackMoveList.Add(character.Position);
+            stringBuilder.AppendLine($"Valid Coordination: {character.Position}, Direction:{character.Direction}");
         }
 
         public void PlacePlusSymbol(Point position)
@@ -122,6 +103,7 @@ namespace AoC_6
             {
                 int x = obstacle.Position.X;
                 int y = obstacle.Position.Y;
+
                 if (x >= 0 && x < width && y >= 0 && y < height)
                 {
                     grid[x, y] = '#';
@@ -131,6 +113,36 @@ namespace AoC_6
         internal void Export()
         {
             export.ExportText(stringBuilder.ToString());
+        }
+
+        internal void PreviousPlaceCharacter(Character character)
+        {
+            int x = character.TrackMoveList[character.TrackMoveList.Count - 2].X;
+            int y = character.TrackMoveList[character.TrackMoveList.Count - 2].Y;
+
+            if ((grid[x, y] == '+') || (grid[x, y] == '^'))
+                return;
+
+            if ((grid[x, y] == '-') || (grid[x, y] == '|'))
+            {
+                grid[x, y] = '+';
+                return;
+            }
+
+            if (character.Direction == "up" || character.Direction == "down")
+                grid[x, y] = '|';
+            else
+                grid[x, y] = '-';
+        }
+
+        internal void InitialCharacterPosition(Point position)
+        {
+            int x = position.X;
+            int y = position.Y;
+            if (x >= 0 && x < width && y >= 0 && y < height)
+            {
+                grid[x, y] = '^';
+            }
         }
     }
 }
