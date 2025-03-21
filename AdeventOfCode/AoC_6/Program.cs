@@ -8,7 +8,7 @@ namespace AoC_6
 {
     internal class Program
     {
-        const string _inputPath = @".\input\ex_input.txt";
+        const string _inputPath = @".\input\input.txt";
         static Character character;
         static FileExporter export = new FileExporter(new TextFileExport());
         static List<HashtagObstacle> hashtagObstacles = new List<HashtagObstacle>();
@@ -17,7 +17,7 @@ namespace AoC_6
         static AoC_Map map;
 
         static int offset = 2;  // offset for the new line character "\r\n"
-        static int size = 10;  // actiual input text file length
+        static int size = 130;  // actiual input text file length
         static int length = size + offset;
 
         static string ChangeDirection(string direction)
@@ -105,11 +105,11 @@ namespace AoC_6
                     map.PlacePlusSymbol(character.TrackMoveList.Last());
                     invalidMoveCount++;
 
-                    map.Display();
+                    //map.Display();
                 }
             } while (invalidMoveCount <= 1);
 
-            //map.Export();
+            map.Export();
             map.Display();
 
             Console.WriteLine($"Distinct Positions: {character.TrackMoveList.Distinct().ToList().Count()}");

@@ -1,3 +1,4 @@
+Valid Coordination: {X=46,Y=39}, Direction:
 Valid Coordination: {X=46,Y=38}, Direction:up
 Valid Coordination: {X=46,Y=37}, Direction:up
 Valid Coordination: {X=46,Y=36}, Direction:up
@@ -12,7 +13,7 @@ Valid Coordination: {X=46,Y=28}, Direction:up
 Valid Coordination: {X=46,Y=27}, Direction:up
 Valid Coordination: {X=46,Y=26}, Direction:up
 Valid Coordination: {X=46,Y=25}, Direction:up
-Invalid direction up, Change direction to right
+
 Valid Coordination: {X=47,Y=25}, Direction:right
 Valid Coordination: {X=48,Y=25}, Direction:right
 Valid Coordination: {X=49,Y=25}, Direction:right
@@ -30,7 +31,7 @@ Valid Coordination: {X=60,Y=25}, Direction:right
 Valid Coordination: {X=61,Y=25}, Direction:right
 Valid Coordination: {X=62,Y=25}, Direction:right
 Valid Coordination: {X=63,Y=25}, Direction:right
-Invalid direction right, Change direction to down
+
 Valid Coordination: {X=63,Y=26}, Direction:down
 Valid Coordination: {X=63,Y=27}, Direction:down
 Valid Coordination: {X=63,Y=28}, Direction:down
@@ -55,7 +56,7 @@ Valid Coordination: {X=63,Y=46}, Direction:down
 Valid Coordination: {X=63,Y=47}, Direction:down
 Valid Coordination: {X=63,Y=48}, Direction:down
 Valid Coordination: {X=63,Y=49}, Direction:down
-Invalid direction down, Change direction to left
+
 Valid Coordination: {X=62,Y=49}, Direction:left
 Valid Coordination: {X=61,Y=49}, Direction:left
 Valid Coordination: {X=60,Y=49}, Direction:left
@@ -107,7 +108,7 @@ Valid Coordination: {X=15,Y=49}, Direction:left
 Valid Coordination: {X=14,Y=49}, Direction:left
 Valid Coordination: {X=13,Y=49}, Direction:left
 Valid Coordination: {X=12,Y=49}, Direction:left
-Invalid direction left, Change direction to up
+
 Valid Coordination: {X=12,Y=48}, Direction:up
 Valid Coordination: {X=12,Y=47}, Direction:up
 Valid Coordination: {X=12,Y=46}, Direction:up
@@ -136,7 +137,7 @@ Valid Coordination: {X=12,Y=24}, Direction:up
 Valid Coordination: {X=12,Y=23}, Direction:up
 Valid Coordination: {X=12,Y=22}, Direction:up
 Valid Coordination: {X=12,Y=21}, Direction:up
-Invalid direction up, Change direction to right
+
 Valid Coordination: {X=13,Y=21}, Direction:right
 Valid Coordination: {X=14,Y=21}, Direction:right
 Valid Coordination: {X=15,Y=21}, Direction:right
@@ -193,7 +194,7 @@ Valid Coordination: {X=65,Y=21}, Direction:right
 Valid Coordination: {X=66,Y=21}, Direction:right
 Valid Coordination: {X=67,Y=21}, Direction:right
 Valid Coordination: {X=68,Y=21}, Direction:right
-Invalid direction right, Change direction to down
+
 Valid Coordination: {X=68,Y=22}, Direction:down
 Valid Coordination: {X=68,Y=23}, Direction:down
 Valid Coordination: {X=68,Y=24}, Direction:down
@@ -240,7 +241,7 @@ Valid Coordination: {X=68,Y=64}, Direction:down
 Valid Coordination: {X=68,Y=65}, Direction:down
 Valid Coordination: {X=68,Y=66}, Direction:down
 Valid Coordination: {X=68,Y=67}, Direction:down
-Invalid direction down, Change direction to left
+
 Valid Coordination: {X=67,Y=67}, Direction:left
 Valid Coordination: {X=66,Y=67}, Direction:left
 Valid Coordination: {X=65,Y=67}, Direction:left
@@ -274,7 +275,7 @@ Valid Coordination: {X=38,Y=67}, Direction:left
 Valid Coordination: {X=37,Y=67}, Direction:left
 Valid Coordination: {X=36,Y=67}, Direction:left
 Valid Coordination: {X=35,Y=67}, Direction:left
-Invalid direction left, Change direction to up
+
 Valid Coordination: {X=35,Y=66}, Direction:up
 Valid Coordination: {X=35,Y=65}, Direction:up
 Valid Coordination: {X=35,Y=64}, Direction:up
@@ -319,7 +320,7 @@ Valid Coordination: {X=35,Y=26}, Direction:up
 Valid Coordination: {X=35,Y=25}, Direction:up
 Valid Coordination: {X=35,Y=24}, Direction:up
 Valid Coordination: {X=35,Y=23}, Direction:up
-Invalid direction up, Change direction to right
+
 Valid Coordination: {X=36,Y=23}, Direction:right
 Valid Coordination: {X=37,Y=23}, Direction:right
 Valid Coordination: {X=38,Y=23}, Direction:right
@@ -364,7 +365,7 @@ Valid Coordination: {X=76,Y=23}, Direction:right
 Valid Coordination: {X=77,Y=23}, Direction:right
 Valid Coordination: {X=78,Y=23}, Direction:right
 Valid Coordination: {X=79,Y=23}, Direction:right
-Invalid direction right, Change direction to down
+
 Valid Coordination: {X=79,Y=24}, Direction:down
 Valid Coordination: {X=79,Y=25}, Direction:down
 Valid Coordination: {X=79,Y=26}, Direction:down
@@ -414,7 +415,7 @@ Valid Coordination: {X=79,Y=69}, Direction:down
 Valid Coordination: {X=79,Y=70}, Direction:down
 Valid Coordination: {X=79,Y=71}, Direction:down
 Valid Coordination: {X=79,Y=72}, Direction:down
-Invalid direction down, Change direction to left
+
 Valid Coordination: {X=78,Y=72}, Direction:left
 Valid Coordination: {X=77,Y=72}, Direction:left
 Valid Coordination: {X=76,Y=72}, Direction:left
@@ -465,7 +466,7 @@ Valid Coordination: {X=32,Y=72}, Direction:left
 Valid Coordination: {X=31,Y=72}, Direction:left
 Valid Coordination: {X=30,Y=72}, Direction:left
 Valid Coordination: {X=29,Y=72}, Direction:left
-Invalid direction left, Change direction to up
+
 Valid Coordination: {X=29,Y=71}, Direction:up
 Valid Coordination: {X=29,Y=70}, Direction:up
 Valid Coordination: {X=29,Y=69}, Direction:up
@@ -504,7 +505,7 @@ Valid Coordination: {X=29,Y=37}, Direction:up
 Valid Coordination: {X=29,Y=36}, Direction:up
 Valid Coordination: {X=29,Y=35}, Direction:up
 Valid Coordination: {X=29,Y=34}, Direction:up
-Invalid direction up, Change direction to right
+
 Valid Coordination: {X=30,Y=34}, Direction:right
 Valid Coordination: {X=31,Y=34}, Direction:right
 Valid Coordination: {X=32,Y=34}, Direction:right
@@ -573,7 +574,7 @@ Valid Coordination: {X=94,Y=34}, Direction:right
 Valid Coordination: {X=95,Y=34}, Direction:right
 Valid Coordination: {X=96,Y=34}, Direction:right
 Valid Coordination: {X=97,Y=34}, Direction:right
-Invalid direction right, Change direction to down
+
 Valid Coordination: {X=97,Y=35}, Direction:down
 Valid Coordination: {X=97,Y=36}, Direction:down
 Valid Coordination: {X=97,Y=37}, Direction:down
@@ -599,7 +600,7 @@ Valid Coordination: {X=97,Y=56}, Direction:down
 Valid Coordination: {X=97,Y=57}, Direction:down
 Valid Coordination: {X=97,Y=58}, Direction:down
 Valid Coordination: {X=97,Y=59}, Direction:down
-Invalid direction down, Change direction to left
+
 Valid Coordination: {X=96,Y=59}, Direction:left
 Valid Coordination: {X=95,Y=59}, Direction:left
 Valid Coordination: {X=94,Y=59}, Direction:left
@@ -647,7 +648,7 @@ Valid Coordination: {X=53,Y=59}, Direction:left
 Valid Coordination: {X=52,Y=59}, Direction:left
 Valid Coordination: {X=51,Y=59}, Direction:left
 Valid Coordination: {X=50,Y=59}, Direction:left
-Invalid direction left, Change direction to up
+
 Valid Coordination: {X=50,Y=58}, Direction:up
 Valid Coordination: {X=50,Y=57}, Direction:up
 Valid Coordination: {X=50,Y=56}, Direction:up
@@ -694,7 +695,7 @@ Valid Coordination: {X=50,Y=16}, Direction:up
 Valid Coordination: {X=50,Y=15}, Direction:up
 Valid Coordination: {X=50,Y=14}, Direction:up
 Valid Coordination: {X=50,Y=13}, Direction:up
-Invalid direction up, Change direction to right
+
 Valid Coordination: {X=51,Y=13}, Direction:right
 Valid Coordination: {X=52,Y=13}, Direction:right
 Valid Coordination: {X=53,Y=13}, Direction:right
@@ -715,7 +716,7 @@ Valid Coordination: {X=67,Y=13}, Direction:right
 Valid Coordination: {X=68,Y=13}, Direction:right
 Valid Coordination: {X=69,Y=13}, Direction:right
 Valid Coordination: {X=70,Y=13}, Direction:right
-Invalid direction right, Change direction to down
+
 Valid Coordination: {X=70,Y=14}, Direction:down
 Valid Coordination: {X=70,Y=15}, Direction:down
 Valid Coordination: {X=70,Y=16}, Direction:down
@@ -758,7 +759,7 @@ Valid Coordination: {X=70,Y=52}, Direction:down
 Valid Coordination: {X=70,Y=53}, Direction:down
 Valid Coordination: {X=70,Y=54}, Direction:down
 Valid Coordination: {X=70,Y=55}, Direction:down
-Invalid direction down, Change direction to left
+
 Valid Coordination: {X=69,Y=55}, Direction:left
 Valid Coordination: {X=68,Y=55}, Direction:left
 Valid Coordination: {X=67,Y=55}, Direction:left
@@ -786,7 +787,7 @@ Valid Coordination: {X=46,Y=55}, Direction:left
 Valid Coordination: {X=45,Y=55}, Direction:left
 Valid Coordination: {X=44,Y=55}, Direction:left
 Valid Coordination: {X=43,Y=55}, Direction:left
-Invalid direction left, Change direction to up
+
 Valid Coordination: {X=43,Y=54}, Direction:up
 Valid Coordination: {X=43,Y=53}, Direction:up
 Valid Coordination: {X=43,Y=52}, Direction:up
@@ -804,7 +805,7 @@ Valid Coordination: {X=43,Y=41}, Direction:up
 Valid Coordination: {X=43,Y=40}, Direction:up
 Valid Coordination: {X=43,Y=39}, Direction:up
 Valid Coordination: {X=43,Y=38}, Direction:up
-Invalid direction up, Change direction to right
+
 Valid Coordination: {X=44,Y=38}, Direction:right
 Valid Coordination: {X=45,Y=38}, Direction:right
 Valid Coordination: {X=46,Y=38}, Direction:right
@@ -844,7 +845,7 @@ Valid Coordination: {X=79,Y=38}, Direction:right
 Valid Coordination: {X=80,Y=38}, Direction:right
 Valid Coordination: {X=81,Y=38}, Direction:right
 Valid Coordination: {X=82,Y=38}, Direction:right
-Invalid direction right, Change direction to down
+
 Valid Coordination: {X=82,Y=39}, Direction:down
 Valid Coordination: {X=82,Y=40}, Direction:down
 Valid Coordination: {X=82,Y=41}, Direction:down
@@ -890,7 +891,7 @@ Valid Coordination: {X=82,Y=80}, Direction:down
 Valid Coordination: {X=82,Y=81}, Direction:down
 Valid Coordination: {X=82,Y=82}, Direction:down
 Valid Coordination: {X=82,Y=83}, Direction:down
-Invalid direction down, Change direction to left
+
 Valid Coordination: {X=81,Y=83}, Direction:left
 Valid Coordination: {X=80,Y=83}, Direction:left
 Valid Coordination: {X=79,Y=83}, Direction:left
@@ -963,7 +964,7 @@ Valid Coordination: {X=13,Y=83}, Direction:left
 Valid Coordination: {X=12,Y=83}, Direction:left
 Valid Coordination: {X=11,Y=83}, Direction:left
 Valid Coordination: {X=10,Y=83}, Direction:left
-Invalid direction left, Change direction to up
+
 Valid Coordination: {X=10,Y=82}, Direction:up
 Valid Coordination: {X=10,Y=81}, Direction:up
 Valid Coordination: {X=10,Y=80}, Direction:up
@@ -1001,7 +1002,7 @@ Valid Coordination: {X=10,Y=49}, Direction:up
 Valid Coordination: {X=10,Y=48}, Direction:up
 Valid Coordination: {X=10,Y=47}, Direction:up
 Valid Coordination: {X=10,Y=46}, Direction:up
-Invalid direction up, Change direction to right
+
 Valid Coordination: {X=11,Y=46}, Direction:right
 Valid Coordination: {X=12,Y=46}, Direction:right
 Valid Coordination: {X=13,Y=46}, Direction:right
@@ -1065,7 +1066,7 @@ Valid Coordination: {X=70,Y=46}, Direction:right
 Valid Coordination: {X=71,Y=46}, Direction:right
 Valid Coordination: {X=72,Y=46}, Direction:right
 Valid Coordination: {X=73,Y=46}, Direction:right
-Invalid direction right, Change direction to down
+
 Valid Coordination: {X=73,Y=47}, Direction:down
 Valid Coordination: {X=73,Y=48}, Direction:down
 Valid Coordination: {X=73,Y=49}, Direction:down
@@ -1108,7 +1109,7 @@ Valid Coordination: {X=73,Y=85}, Direction:down
 Valid Coordination: {X=73,Y=86}, Direction:down
 Valid Coordination: {X=73,Y=87}, Direction:down
 Valid Coordination: {X=73,Y=88}, Direction:down
-Invalid direction down, Change direction to left
+
 Valid Coordination: {X=72,Y=88}, Direction:left
 Valid Coordination: {X=71,Y=88}, Direction:left
 Valid Coordination: {X=70,Y=88}, Direction:left
@@ -1133,7 +1134,7 @@ Valid Coordination: {X=52,Y=88}, Direction:left
 Valid Coordination: {X=51,Y=88}, Direction:left
 Valid Coordination: {X=50,Y=88}, Direction:left
 Valid Coordination: {X=49,Y=88}, Direction:left
-Invalid direction left, Change direction to up
+
 Valid Coordination: {X=49,Y=87}, Direction:up
 Valid Coordination: {X=49,Y=86}, Direction:up
 Valid Coordination: {X=49,Y=85}, Direction:up
@@ -1147,7 +1148,7 @@ Valid Coordination: {X=49,Y=78}, Direction:up
 Valid Coordination: {X=49,Y=77}, Direction:up
 Valid Coordination: {X=49,Y=76}, Direction:up
 Valid Coordination: {X=49,Y=75}, Direction:up
-Invalid direction up, Change direction to right
+
 Valid Coordination: {X=50,Y=75}, Direction:right
 Valid Coordination: {X=51,Y=75}, Direction:right
 Valid Coordination: {X=52,Y=75}, Direction:right
@@ -1191,7 +1192,7 @@ Valid Coordination: {X=89,Y=75}, Direction:right
 Valid Coordination: {X=90,Y=75}, Direction:right
 Valid Coordination: {X=91,Y=75}, Direction:right
 Valid Coordination: {X=92,Y=75}, Direction:right
-Invalid direction right, Change direction to down
+
 Valid Coordination: {X=92,Y=76}, Direction:down
 Valid Coordination: {X=92,Y=77}, Direction:down
 Valid Coordination: {X=92,Y=78}, Direction:down
@@ -1218,7 +1219,7 @@ Valid Coordination: {X=92,Y=98}, Direction:down
 Valid Coordination: {X=92,Y=99}, Direction:down
 Valid Coordination: {X=92,Y=100}, Direction:down
 Valid Coordination: {X=92,Y=101}, Direction:down
-Invalid direction down, Change direction to left
+
 Valid Coordination: {X=91,Y=101}, Direction:left
 Valid Coordination: {X=90,Y=101}, Direction:left
 Valid Coordination: {X=89,Y=101}, Direction:left
@@ -1294,7 +1295,7 @@ Valid Coordination: {X=20,Y=101}, Direction:left
 Valid Coordination: {X=19,Y=101}, Direction:left
 Valid Coordination: {X=18,Y=101}, Direction:left
 Valid Coordination: {X=17,Y=101}, Direction:left
-Invalid direction left, Change direction to up
+
 Valid Coordination: {X=17,Y=100}, Direction:up
 Valid Coordination: {X=17,Y=99}, Direction:up
 Valid Coordination: {X=17,Y=98}, Direction:up
@@ -1330,7 +1331,7 @@ Valid Coordination: {X=17,Y=69}, Direction:up
 Valid Coordination: {X=17,Y=68}, Direction:up
 Valid Coordination: {X=17,Y=67}, Direction:up
 Valid Coordination: {X=17,Y=66}, Direction:up
-Invalid direction up, Change direction to right
+
 Valid Coordination: {X=18,Y=66}, Direction:right
 Valid Coordination: {X=19,Y=66}, Direction:right
 Valid Coordination: {X=20,Y=66}, Direction:right
@@ -1377,7 +1378,7 @@ Valid Coordination: {X=60,Y=66}, Direction:right
 Valid Coordination: {X=61,Y=66}, Direction:right
 Valid Coordination: {X=62,Y=66}, Direction:right
 Valid Coordination: {X=63,Y=66}, Direction:right
-Invalid direction right, Change direction to down
+
 Valid Coordination: {X=63,Y=67}, Direction:down
 Valid Coordination: {X=63,Y=68}, Direction:down
 Valid Coordination: {X=63,Y=69}, Direction:down
@@ -1405,7 +1406,7 @@ Valid Coordination: {X=63,Y=90}, Direction:down
 Valid Coordination: {X=63,Y=91}, Direction:down
 Valid Coordination: {X=63,Y=92}, Direction:down
 Valid Coordination: {X=63,Y=93}, Direction:down
-Invalid direction down, Change direction to left
+
 Valid Coordination: {X=62,Y=93}, Direction:left
 Valid Coordination: {X=61,Y=93}, Direction:left
 Valid Coordination: {X=60,Y=93}, Direction:left
@@ -1442,7 +1443,7 @@ Valid Coordination: {X=30,Y=93}, Direction:left
 Valid Coordination: {X=29,Y=93}, Direction:left
 Valid Coordination: {X=28,Y=93}, Direction:left
 Valid Coordination: {X=27,Y=93}, Direction:left
-Invalid direction left, Change direction to up
+
 Valid Coordination: {X=27,Y=92}, Direction:up
 Valid Coordination: {X=27,Y=91}, Direction:up
 Valid Coordination: {X=27,Y=90}, Direction:up
@@ -1475,7 +1476,7 @@ Valid Coordination: {X=27,Y=64}, Direction:up
 Valid Coordination: {X=27,Y=63}, Direction:up
 Valid Coordination: {X=27,Y=62}, Direction:up
 Valid Coordination: {X=27,Y=61}, Direction:up
-Invalid direction up, Change direction to right
+
 Valid Coordination: {X=28,Y=61}, Direction:right
 Valid Coordination: {X=29,Y=61}, Direction:right
 Valid Coordination: {X=30,Y=61}, Direction:right
@@ -1562,7 +1563,7 @@ Valid Coordination: {X=110,Y=61}, Direction:right
 Valid Coordination: {X=111,Y=61}, Direction:right
 Valid Coordination: {X=112,Y=61}, Direction:right
 Valid Coordination: {X=113,Y=61}, Direction:right
-Invalid direction right, Change direction to down
+
 Valid Coordination: {X=113,Y=62}, Direction:down
 Valid Coordination: {X=113,Y=63}, Direction:down
 Valid Coordination: {X=113,Y=64}, Direction:down
@@ -1596,7 +1597,7 @@ Valid Coordination: {X=113,Y=91}, Direction:down
 Valid Coordination: {X=113,Y=92}, Direction:down
 Valid Coordination: {X=113,Y=93}, Direction:down
 Valid Coordination: {X=113,Y=94}, Direction:down
-Invalid direction down, Change direction to left
+
 Valid Coordination: {X=112,Y=94}, Direction:left
 Valid Coordination: {X=111,Y=94}, Direction:left
 Valid Coordination: {X=110,Y=94}, Direction:left
@@ -1613,7 +1614,7 @@ Valid Coordination: {X=100,Y=94}, Direction:left
 Valid Coordination: {X=99,Y=94}, Direction:left
 Valid Coordination: {X=98,Y=94}, Direction:left
 Valid Coordination: {X=97,Y=94}, Direction:left
-Invalid direction left, Change direction to up
+
 Valid Coordination: {X=97,Y=93}, Direction:up
 Valid Coordination: {X=97,Y=92}, Direction:up
 Valid Coordination: {X=97,Y=91}, Direction:up
@@ -1621,7 +1622,7 @@ Valid Coordination: {X=97,Y=90}, Direction:up
 Valid Coordination: {X=97,Y=89}, Direction:up
 Valid Coordination: {X=97,Y=88}, Direction:up
 Valid Coordination: {X=97,Y=87}, Direction:up
-Invalid direction up, Change direction to right
+
 Valid Coordination: {X=98,Y=87}, Direction:right
 Valid Coordination: {X=99,Y=87}, Direction:right
 Valid Coordination: {X=100,Y=87}, Direction:right
@@ -1639,7 +1640,7 @@ Valid Coordination: {X=111,Y=87}, Direction:right
 Valid Coordination: {X=112,Y=87}, Direction:right
 Valid Coordination: {X=113,Y=87}, Direction:right
 Valid Coordination: {X=114,Y=87}, Direction:right
-Invalid direction right, Change direction to down
+
 Valid Coordination: {X=114,Y=88}, Direction:down
 Valid Coordination: {X=114,Y=89}, Direction:down
 Valid Coordination: {X=114,Y=90}, Direction:down
@@ -1661,7 +1662,7 @@ Valid Coordination: {X=114,Y=105}, Direction:down
 Valid Coordination: {X=114,Y=106}, Direction:down
 Valid Coordination: {X=114,Y=107}, Direction:down
 Valid Coordination: {X=114,Y=108}, Direction:down
-Invalid direction down, Change direction to left
+
 Valid Coordination: {X=113,Y=108}, Direction:left
 Valid Coordination: {X=112,Y=108}, Direction:left
 Valid Coordination: {X=111,Y=108}, Direction:left
@@ -1702,7 +1703,7 @@ Valid Coordination: {X=77,Y=108}, Direction:left
 Valid Coordination: {X=76,Y=108}, Direction:left
 Valid Coordination: {X=75,Y=108}, Direction:left
 Valid Coordination: {X=74,Y=108}, Direction:left
-Invalid direction left, Change direction to up
+
 Valid Coordination: {X=74,Y=107}, Direction:up
 Valid Coordination: {X=74,Y=106}, Direction:up
 Valid Coordination: {X=74,Y=105}, Direction:up
@@ -1747,7 +1748,7 @@ Valid Coordination: {X=74,Y=67}, Direction:up
 Valid Coordination: {X=74,Y=66}, Direction:up
 Valid Coordination: {X=74,Y=65}, Direction:up
 Valid Coordination: {X=74,Y=64}, Direction:up
-Invalid direction up, Change direction to right
+
 Valid Coordination: {X=75,Y=64}, Direction:right
 Valid Coordination: {X=76,Y=64}, Direction:right
 Valid Coordination: {X=77,Y=64}, Direction:right
@@ -1781,7 +1782,7 @@ Valid Coordination: {X=104,Y=64}, Direction:right
 Valid Coordination: {X=105,Y=64}, Direction:right
 Valid Coordination: {X=106,Y=64}, Direction:right
 Valid Coordination: {X=107,Y=64}, Direction:right
-Invalid direction right, Change direction to down
+
 Valid Coordination: {X=107,Y=65}, Direction:down
 Valid Coordination: {X=107,Y=66}, Direction:down
 Valid Coordination: {X=107,Y=67}, Direction:down
@@ -1821,7 +1822,7 @@ Valid Coordination: {X=107,Y=100}, Direction:down
 Valid Coordination: {X=107,Y=101}, Direction:down
 Valid Coordination: {X=107,Y=102}, Direction:down
 Valid Coordination: {X=107,Y=103}, Direction:down
-Invalid direction down, Change direction to left
+
 Valid Coordination: {X=106,Y=103}, Direction:left
 Valid Coordination: {X=105,Y=103}, Direction:left
 Valid Coordination: {X=104,Y=103}, Direction:left
@@ -1862,7 +1863,7 @@ Valid Coordination: {X=70,Y=103}, Direction:left
 Valid Coordination: {X=69,Y=103}, Direction:left
 Valid Coordination: {X=68,Y=103}, Direction:left
 Valid Coordination: {X=67,Y=103}, Direction:left
-Invalid direction left, Change direction to up
+
 Valid Coordination: {X=67,Y=102}, Direction:up
 Valid Coordination: {X=67,Y=101}, Direction:up
 Valid Coordination: {X=67,Y=100}, Direction:up
@@ -1925,7 +1926,7 @@ Valid Coordination: {X=67,Y=44}, Direction:up
 Valid Coordination: {X=67,Y=43}, Direction:up
 Valid Coordination: {X=67,Y=42}, Direction:up
 Valid Coordination: {X=67,Y=41}, Direction:up
-Invalid direction up, Change direction to right
+
 Valid Coordination: {X=68,Y=41}, Direction:right
 Valid Coordination: {X=69,Y=41}, Direction:right
 Valid Coordination: {X=70,Y=41}, Direction:right
@@ -1962,7 +1963,7 @@ Valid Coordination: {X=100,Y=41}, Direction:right
 Valid Coordination: {X=101,Y=41}, Direction:right
 Valid Coordination: {X=102,Y=41}, Direction:right
 Valid Coordination: {X=103,Y=41}, Direction:right
-Invalid direction right, Change direction to down
+
 Valid Coordination: {X=103,Y=42}, Direction:down
 Valid Coordination: {X=103,Y=43}, Direction:down
 Valid Coordination: {X=103,Y=44}, Direction:down
@@ -2019,7 +2020,7 @@ Valid Coordination: {X=103,Y=94}, Direction:down
 Valid Coordination: {X=103,Y=95}, Direction:down
 Valid Coordination: {X=103,Y=96}, Direction:down
 Valid Coordination: {X=103,Y=97}, Direction:down
-Invalid direction down, Change direction to left
+
 Valid Coordination: {X=102,Y=97}, Direction:left
 Valid Coordination: {X=101,Y=97}, Direction:left
 Valid Coordination: {X=100,Y=97}, Direction:left
@@ -2067,7 +2068,7 @@ Valid Coordination: {X=59,Y=97}, Direction:left
 Valid Coordination: {X=58,Y=97}, Direction:left
 Valid Coordination: {X=57,Y=97}, Direction:left
 Valid Coordination: {X=56,Y=97}, Direction:left
-Invalid direction left, Change direction to up
+
 Valid Coordination: {X=56,Y=96}, Direction:up
 Valid Coordination: {X=56,Y=95}, Direction:up
 Valid Coordination: {X=56,Y=94}, Direction:up
@@ -2147,7 +2148,7 @@ Valid Coordination: {X=56,Y=21}, Direction:up
 Valid Coordination: {X=56,Y=20}, Direction:up
 Valid Coordination: {X=56,Y=19}, Direction:up
 Valid Coordination: {X=56,Y=18}, Direction:up
-Invalid direction up, Change direction to right
+
 Valid Coordination: {X=57,Y=18}, Direction:right
 Valid Coordination: {X=58,Y=18}, Direction:right
 Valid Coordination: {X=59,Y=18}, Direction:right
@@ -2203,7 +2204,7 @@ Valid Coordination: {X=108,Y=18}, Direction:right
 Valid Coordination: {X=109,Y=18}, Direction:right
 Valid Coordination: {X=110,Y=18}, Direction:right
 Valid Coordination: {X=111,Y=18}, Direction:right
-Invalid direction right, Change direction to down
+
 Valid Coordination: {X=111,Y=19}, Direction:down
 Valid Coordination: {X=111,Y=20}, Direction:down
 Valid Coordination: {X=111,Y=21}, Direction:down
@@ -2238,7 +2239,7 @@ Valid Coordination: {X=111,Y=49}, Direction:down
 Valid Coordination: {X=111,Y=50}, Direction:down
 Valid Coordination: {X=111,Y=51}, Direction:down
 Valid Coordination: {X=111,Y=52}, Direction:down
-Invalid direction down, Change direction to left
+
 Valid Coordination: {X=110,Y=52}, Direction:left
 Valid Coordination: {X=109,Y=52}, Direction:left
 Valid Coordination: {X=108,Y=52}, Direction:left
@@ -2296,7 +2297,7 @@ Valid Coordination: {X=57,Y=52}, Direction:left
 Valid Coordination: {X=56,Y=52}, Direction:left
 Valid Coordination: {X=55,Y=52}, Direction:left
 Valid Coordination: {X=54,Y=52}, Direction:left
-Invalid direction left, Change direction to up
+
 Valid Coordination: {X=54,Y=51}, Direction:up
 Valid Coordination: {X=54,Y=50}, Direction:up
 Valid Coordination: {X=54,Y=49}, Direction:up
@@ -2337,7 +2338,7 @@ Valid Coordination: {X=54,Y=15}, Direction:up
 Valid Coordination: {X=54,Y=14}, Direction:up
 Valid Coordination: {X=54,Y=13}, Direction:up
 Valid Coordination: {X=54,Y=12}, Direction:up
-Invalid direction up, Change direction to right
+
 Valid Coordination: {X=55,Y=12}, Direction:right
 Valid Coordination: {X=56,Y=12}, Direction:right
 Valid Coordination: {X=57,Y=12}, Direction:right
@@ -2364,7 +2365,7 @@ Valid Coordination: {X=77,Y=12}, Direction:right
 Valid Coordination: {X=78,Y=12}, Direction:right
 Valid Coordination: {X=79,Y=12}, Direction:right
 Valid Coordination: {X=80,Y=12}, Direction:right
-Invalid direction right, Change direction to down
+
 Valid Coordination: {X=80,Y=13}, Direction:down
 Valid Coordination: {X=80,Y=14}, Direction:down
 Valid Coordination: {X=80,Y=15}, Direction:down
@@ -2374,12 +2375,12 @@ Valid Coordination: {X=80,Y=18}, Direction:down
 Valid Coordination: {X=80,Y=19}, Direction:down
 Valid Coordination: {X=80,Y=20}, Direction:down
 Valid Coordination: {X=80,Y=21}, Direction:down
-Invalid direction down, Change direction to left
+
 Valid Coordination: {X=79,Y=21}, Direction:left
 Valid Coordination: {X=78,Y=21}, Direction:left
 Valid Coordination: {X=77,Y=21}, Direction:left
 Valid Coordination: {X=76,Y=21}, Direction:left
-Invalid direction left, Change direction to up
+
 Valid Coordination: {X=76,Y=20}, Direction:up
 Valid Coordination: {X=76,Y=19}, Direction:up
 Valid Coordination: {X=76,Y=18}, Direction:up
@@ -2395,7 +2396,7 @@ Valid Coordination: {X=76,Y=9}, Direction:up
 Valid Coordination: {X=76,Y=8}, Direction:up
 Valid Coordination: {X=76,Y=7}, Direction:up
 Valid Coordination: {X=76,Y=6}, Direction:up
-Invalid direction up, Change direction to right
+
 Valid Coordination: {X=77,Y=6}, Direction:right
 Valid Coordination: {X=78,Y=6}, Direction:right
 Valid Coordination: {X=79,Y=6}, Direction:right
@@ -2441,7 +2442,7 @@ Valid Coordination: {X=118,Y=6}, Direction:right
 Valid Coordination: {X=119,Y=6}, Direction:right
 Valid Coordination: {X=120,Y=6}, Direction:right
 Valid Coordination: {X=121,Y=6}, Direction:right
-Invalid direction right, Change direction to down
+
 Valid Coordination: {X=121,Y=7}, Direction:down
 Valid Coordination: {X=121,Y=8}, Direction:down
 Valid Coordination: {X=121,Y=9}, Direction:down
@@ -2506,7 +2507,7 @@ Valid Coordination: {X=121,Y=67}, Direction:down
 Valid Coordination: {X=121,Y=68}, Direction:down
 Valid Coordination: {X=121,Y=69}, Direction:down
 Valid Coordination: {X=121,Y=70}, Direction:down
-Invalid direction down, Change direction to left
+
 Valid Coordination: {X=120,Y=70}, Direction:left
 Valid Coordination: {X=119,Y=70}, Direction:left
 Valid Coordination: {X=118,Y=70}, Direction:left
@@ -2602,7 +2603,7 @@ Valid Coordination: {X=29,Y=70}, Direction:left
 Valid Coordination: {X=28,Y=70}, Direction:left
 Valid Coordination: {X=27,Y=70}, Direction:left
 Valid Coordination: {X=26,Y=70}, Direction:left
-Invalid direction left, Change direction to up
+
 Valid Coordination: {X=26,Y=69}, Direction:up
 Valid Coordination: {X=26,Y=68}, Direction:up
 Valid Coordination: {X=26,Y=67}, Direction:up
@@ -2640,10 +2641,10 @@ Valid Coordination: {X=26,Y=36}, Direction:up
 Valid Coordination: {X=26,Y=35}, Direction:up
 Valid Coordination: {X=26,Y=34}, Direction:up
 Valid Coordination: {X=26,Y=33}, Direction:up
-Invalid direction up, Change direction to right
+
 Valid Coordination: {X=27,Y=33}, Direction:right
 Valid Coordination: {X=28,Y=33}, Direction:right
-Invalid direction right, Change direction to down
+
 Valid Coordination: {X=28,Y=34}, Direction:down
 Valid Coordination: {X=28,Y=35}, Direction:down
 Valid Coordination: {X=28,Y=36}, Direction:down
@@ -2658,7 +2659,7 @@ Valid Coordination: {X=28,Y=44}, Direction:down
 Valid Coordination: {X=28,Y=45}, Direction:down
 Valid Coordination: {X=28,Y=46}, Direction:down
 Valid Coordination: {X=28,Y=47}, Direction:down
-Invalid direction down, Change direction to left
+
 Valid Coordination: {X=27,Y=47}, Direction:left
 Valid Coordination: {X=26,Y=47}, Direction:left
 Valid Coordination: {X=25,Y=47}, Direction:left
@@ -2668,7 +2669,7 @@ Valid Coordination: {X=22,Y=47}, Direction:left
 Valid Coordination: {X=21,Y=47}, Direction:left
 Valid Coordination: {X=20,Y=47}, Direction:left
 Valid Coordination: {X=19,Y=47}, Direction:left
-Invalid direction left, Change direction to up
+
 Valid Coordination: {X=19,Y=46}, Direction:up
 Valid Coordination: {X=19,Y=45}, Direction:up
 Valid Coordination: {X=19,Y=44}, Direction:up
@@ -2685,7 +2686,7 @@ Valid Coordination: {X=19,Y=34}, Direction:up
 Valid Coordination: {X=19,Y=33}, Direction:up
 Valid Coordination: {X=19,Y=32}, Direction:up
 Valid Coordination: {X=19,Y=31}, Direction:up
-Invalid direction up, Change direction to right
+
 Valid Coordination: {X=20,Y=31}, Direction:right
 Valid Coordination: {X=21,Y=31}, Direction:right
 Valid Coordination: {X=22,Y=31}, Direction:right
@@ -2727,7 +2728,7 @@ Valid Coordination: {X=57,Y=31}, Direction:right
 Valid Coordination: {X=58,Y=31}, Direction:right
 Valid Coordination: {X=59,Y=31}, Direction:right
 Valid Coordination: {X=60,Y=31}, Direction:right
-Invalid direction right, Change direction to down
+
 Valid Coordination: {X=60,Y=32}, Direction:down
 Valid Coordination: {X=60,Y=33}, Direction:down
 Valid Coordination: {X=60,Y=34}, Direction:down
@@ -2809,7 +2810,7 @@ Valid Coordination: {X=60,Y=109}, Direction:down
 Valid Coordination: {X=60,Y=110}, Direction:down
 Valid Coordination: {X=60,Y=111}, Direction:down
 Valid Coordination: {X=60,Y=112}, Direction:down
-Invalid direction down, Change direction to left
+
 Valid Coordination: {X=59,Y=112}, Direction:left
 Valid Coordination: {X=58,Y=112}, Direction:left
 Valid Coordination: {X=57,Y=112}, Direction:left
@@ -2839,7 +2840,7 @@ Valid Coordination: {X=34,Y=112}, Direction:left
 Valid Coordination: {X=33,Y=112}, Direction:left
 Valid Coordination: {X=32,Y=112}, Direction:left
 Valid Coordination: {X=31,Y=112}, Direction:left
-Invalid direction left, Change direction to up
+
 Valid Coordination: {X=31,Y=111}, Direction:up
 Valid Coordination: {X=31,Y=110}, Direction:up
 Valid Coordination: {X=31,Y=109}, Direction:up
@@ -2892,7 +2893,7 @@ Valid Coordination: {X=31,Y=63}, Direction:up
 Valid Coordination: {X=31,Y=62}, Direction:up
 Valid Coordination: {X=31,Y=61}, Direction:up
 Valid Coordination: {X=31,Y=60}, Direction:up
-Invalid direction up, Change direction to right
+
 Valid Coordination: {X=32,Y=60}, Direction:right
 Valid Coordination: {X=33,Y=60}, Direction:right
 Valid Coordination: {X=34,Y=60}, Direction:right
@@ -2923,7 +2924,7 @@ Valid Coordination: {X=58,Y=60}, Direction:right
 Valid Coordination: {X=59,Y=60}, Direction:right
 Valid Coordination: {X=60,Y=60}, Direction:right
 Valid Coordination: {X=61,Y=60}, Direction:right
-Invalid direction right, Change direction to down
+
 Valid Coordination: {X=61,Y=61}, Direction:down
 Valid Coordination: {X=61,Y=62}, Direction:down
 Valid Coordination: {X=61,Y=63}, Direction:down
@@ -2980,7 +2981,7 @@ Valid Coordination: {X=61,Y=113}, Direction:down
 Valid Coordination: {X=61,Y=114}, Direction:down
 Valid Coordination: {X=61,Y=115}, Direction:down
 Valid Coordination: {X=61,Y=116}, Direction:down
-Invalid direction down, Change direction to left
+
 Valid Coordination: {X=60,Y=116}, Direction:left
 Valid Coordination: {X=59,Y=116}, Direction:left
 Valid Coordination: {X=58,Y=116}, Direction:left
@@ -3018,7 +3019,7 @@ Valid Coordination: {X=27,Y=116}, Direction:left
 Valid Coordination: {X=26,Y=116}, Direction:left
 Valid Coordination: {X=25,Y=116}, Direction:left
 Valid Coordination: {X=24,Y=116}, Direction:left
-Invalid direction left, Change direction to up
+
 Valid Coordination: {X=24,Y=115}, Direction:up
 Valid Coordination: {X=24,Y=114}, Direction:up
 Valid Coordination: {X=24,Y=113}, Direction:up
@@ -3058,7 +3059,7 @@ Valid Coordination: {X=24,Y=80}, Direction:up
 Valid Coordination: {X=24,Y=79}, Direction:up
 Valid Coordination: {X=24,Y=78}, Direction:up
 Valid Coordination: {X=24,Y=77}, Direction:up
-Invalid direction up, Change direction to right
+
 Valid Coordination: {X=25,Y=77}, Direction:right
 Valid Coordination: {X=26,Y=77}, Direction:right
 Valid Coordination: {X=27,Y=77}, Direction:right
@@ -3113,7 +3114,7 @@ Valid Coordination: {X=75,Y=77}, Direction:right
 Valid Coordination: {X=76,Y=77}, Direction:right
 Valid Coordination: {X=77,Y=77}, Direction:right
 Valid Coordination: {X=78,Y=77}, Direction:right
-Invalid direction right, Change direction to down
+
 Valid Coordination: {X=78,Y=78}, Direction:down
 Valid Coordination: {X=78,Y=79}, Direction:down
 Valid Coordination: {X=78,Y=80}, Direction:down
@@ -3155,7 +3156,7 @@ Valid Coordination: {X=78,Y=115}, Direction:down
 Valid Coordination: {X=78,Y=116}, Direction:down
 Valid Coordination: {X=78,Y=117}, Direction:down
 Valid Coordination: {X=78,Y=118}, Direction:down
-Invalid direction down, Change direction to left
+
 Valid Coordination: {X=77,Y=118}, Direction:left
 Valid Coordination: {X=76,Y=118}, Direction:left
 Valid Coordination: {X=75,Y=118}, Direction:left
@@ -3200,7 +3201,7 @@ Valid Coordination: {X=37,Y=118}, Direction:left
 Valid Coordination: {X=36,Y=118}, Direction:left
 Valid Coordination: {X=35,Y=118}, Direction:left
 Valid Coordination: {X=34,Y=118}, Direction:left
-Invalid direction left, Change direction to up
+
 Valid Coordination: {X=34,Y=117}, Direction:up
 Valid Coordination: {X=34,Y=116}, Direction:up
 Valid Coordination: {X=34,Y=115}, Direction:up
@@ -3210,7 +3211,7 @@ Valid Coordination: {X=34,Y=112}, Direction:up
 Valid Coordination: {X=34,Y=111}, Direction:up
 Valid Coordination: {X=34,Y=110}, Direction:up
 Valid Coordination: {X=34,Y=109}, Direction:up
-Invalid direction up, Change direction to right
+
 Valid Coordination: {X=35,Y=109}, Direction:right
 Valid Coordination: {X=36,Y=109}, Direction:right
 Valid Coordination: {X=37,Y=109}, Direction:right
@@ -3235,13 +3236,13 @@ Valid Coordination: {X=55,Y=109}, Direction:right
 Valid Coordination: {X=56,Y=109}, Direction:right
 Valid Coordination: {X=57,Y=109}, Direction:right
 Valid Coordination: {X=58,Y=109}, Direction:right
-Invalid direction right, Change direction to down
+
 Valid Coordination: {X=58,Y=110}, Direction:down
 Valid Coordination: {X=58,Y=111}, Direction:down
 Valid Coordination: {X=58,Y=112}, Direction:down
 Valid Coordination: {X=58,Y=113}, Direction:down
 Valid Coordination: {X=58,Y=114}, Direction:down
-Invalid direction down, Change direction to left
+
 Valid Coordination: {X=57,Y=114}, Direction:left
 Valid Coordination: {X=56,Y=114}, Direction:left
 Valid Coordination: {X=55,Y=114}, Direction:left
@@ -3259,7 +3260,7 @@ Valid Coordination: {X=44,Y=114}, Direction:left
 Valid Coordination: {X=43,Y=114}, Direction:left
 Valid Coordination: {X=42,Y=114}, Direction:left
 Valid Coordination: {X=41,Y=114}, Direction:left
-Invalid direction left, Change direction to up
+
 Valid Coordination: {X=41,Y=113}, Direction:up
 Valid Coordination: {X=41,Y=112}, Direction:up
 Valid Coordination: {X=41,Y=111}, Direction:up
@@ -3294,7 +3295,7 @@ Valid Coordination: {X=41,Y=83}, Direction:up
 Valid Coordination: {X=41,Y=82}, Direction:up
 Valid Coordination: {X=41,Y=81}, Direction:up
 Valid Coordination: {X=41,Y=80}, Direction:up
-Invalid direction up, Change direction to right
+
 Valid Coordination: {X=42,Y=80}, Direction:right
 Valid Coordination: {X=43,Y=80}, Direction:right
 Valid Coordination: {X=44,Y=80}, Direction:right
@@ -3370,7 +3371,7 @@ Valid Coordination: {X=113,Y=80}, Direction:right
 Valid Coordination: {X=114,Y=80}, Direction:right
 Valid Coordination: {X=115,Y=80}, Direction:right
 Valid Coordination: {X=116,Y=80}, Direction:right
-Invalid direction right, Change direction to down
+
 Valid Coordination: {X=116,Y=81}, Direction:down
 Valid Coordination: {X=116,Y=82}, Direction:down
 Valid Coordination: {X=116,Y=83}, Direction:down
@@ -3396,7 +3397,7 @@ Valid Coordination: {X=116,Y=102}, Direction:down
 Valid Coordination: {X=116,Y=103}, Direction:down
 Valid Coordination: {X=116,Y=104}, Direction:down
 Valid Coordination: {X=116,Y=105}, Direction:down
-Invalid direction down, Change direction to left
+
 Valid Coordination: {X=115,Y=105}, Direction:left
 Valid Coordination: {X=114,Y=105}, Direction:left
 Valid Coordination: {X=113,Y=105}, Direction:left
@@ -3479,7 +3480,7 @@ Valid Coordination: {X=37,Y=105}, Direction:left
 Valid Coordination: {X=36,Y=105}, Direction:left
 Valid Coordination: {X=35,Y=105}, Direction:left
 Valid Coordination: {X=34,Y=105}, Direction:left
-Invalid direction left, Change direction to up
+
 Valid Coordination: {X=34,Y=104}, Direction:up
 Valid Coordination: {X=34,Y=103}, Direction:up
 Valid Coordination: {X=34,Y=102}, Direction:up
@@ -3499,7 +3500,7 @@ Valid Coordination: {X=34,Y=89}, Direction:up
 Valid Coordination: {X=34,Y=88}, Direction:up
 Valid Coordination: {X=34,Y=87}, Direction:up
 Valid Coordination: {X=34,Y=86}, Direction:up
-Invalid direction up, Change direction to right
+
 Valid Coordination: {X=35,Y=86}, Direction:right
 Valid Coordination: {X=36,Y=86}, Direction:right
 Valid Coordination: {X=37,Y=86}, Direction:right
@@ -3535,7 +3536,7 @@ Valid Coordination: {X=66,Y=86}, Direction:right
 Valid Coordination: {X=67,Y=86}, Direction:right
 Valid Coordination: {X=68,Y=86}, Direction:right
 Valid Coordination: {X=69,Y=86}, Direction:right
-Invalid direction right, Change direction to down
+
 Valid Coordination: {X=69,Y=87}, Direction:down
 Valid Coordination: {X=69,Y=88}, Direction:down
 Valid Coordination: {X=69,Y=89}, Direction:down
@@ -3560,7 +3561,7 @@ Valid Coordination: {X=69,Y=107}, Direction:down
 Valid Coordination: {X=69,Y=108}, Direction:down
 Valid Coordination: {X=69,Y=109}, Direction:down
 Valid Coordination: {X=69,Y=110}, Direction:down
-Invalid direction down, Change direction to left
+
 Valid Coordination: {X=68,Y=110}, Direction:left
 Valid Coordination: {X=67,Y=110}, Direction:left
 Valid Coordination: {X=66,Y=110}, Direction:left
@@ -3615,7 +3616,7 @@ Valid Coordination: {X=18,Y=110}, Direction:left
 Valid Coordination: {X=17,Y=110}, Direction:left
 Valid Coordination: {X=16,Y=110}, Direction:left
 Valid Coordination: {X=15,Y=110}, Direction:left
-Invalid direction left, Change direction to up
+
 Valid Coordination: {X=15,Y=109}, Direction:up
 Valid Coordination: {X=15,Y=108}, Direction:up
 Valid Coordination: {X=15,Y=107}, Direction:up
@@ -3632,7 +3633,7 @@ Valid Coordination: {X=15,Y=97}, Direction:up
 Valid Coordination: {X=15,Y=96}, Direction:up
 Valid Coordination: {X=15,Y=95}, Direction:up
 Valid Coordination: {X=15,Y=94}, Direction:up
-Invalid direction up, Change direction to right
+
 Valid Coordination: {X=16,Y=94}, Direction:right
 Valid Coordination: {X=17,Y=94}, Direction:right
 Valid Coordination: {X=18,Y=94}, Direction:right
@@ -3662,7 +3663,7 @@ Valid Coordination: {X=41,Y=94}, Direction:right
 Valid Coordination: {X=42,Y=94}, Direction:right
 Valid Coordination: {X=43,Y=94}, Direction:right
 Valid Coordination: {X=44,Y=94}, Direction:right
-Invalid direction right, Change direction to down
+
 Valid Coordination: {X=44,Y=95}, Direction:down
 Valid Coordination: {X=44,Y=96}, Direction:down
 Valid Coordination: {X=44,Y=97}, Direction:down
@@ -3694,7 +3695,7 @@ Valid Coordination: {X=44,Y=122}, Direction:down
 Valid Coordination: {X=44,Y=123}, Direction:down
 Valid Coordination: {X=44,Y=124}, Direction:down
 Valid Coordination: {X=44,Y=125}, Direction:down
-Invalid direction down, Change direction to left
+
 Valid Coordination: {X=43,Y=125}, Direction:left
 Valid Coordination: {X=42,Y=125}, Direction:left
 Valid Coordination: {X=41,Y=125}, Direction:left
@@ -3732,7 +3733,7 @@ Valid Coordination: {X=10,Y=125}, Direction:left
 Valid Coordination: {X=9,Y=125}, Direction:left
 Valid Coordination: {X=8,Y=125}, Direction:left
 Valid Coordination: {X=7,Y=125}, Direction:left
-Invalid direction left, Change direction to up
+
 Valid Coordination: {X=7,Y=124}, Direction:up
 Valid Coordination: {X=7,Y=123}, Direction:up
 Valid Coordination: {X=7,Y=122}, Direction:up
@@ -3746,7 +3747,7 @@ Valid Coordination: {X=7,Y=115}, Direction:up
 Valid Coordination: {X=7,Y=114}, Direction:up
 Valid Coordination: {X=7,Y=113}, Direction:up
 Valid Coordination: {X=7,Y=112}, Direction:up
-Invalid direction up, Change direction to right
+
 Valid Coordination: {X=8,Y=112}, Direction:right
 Valid Coordination: {X=9,Y=112}, Direction:right
 Valid Coordination: {X=10,Y=112}, Direction:right
@@ -3762,7 +3763,7 @@ Valid Coordination: {X=19,Y=112}, Direction:right
 Valid Coordination: {X=20,Y=112}, Direction:right
 Valid Coordination: {X=21,Y=112}, Direction:right
 Valid Coordination: {X=22,Y=112}, Direction:right
-Invalid direction right, Change direction to down
+
 Valid Coordination: {X=22,Y=113}, Direction:down
 Valid Coordination: {X=22,Y=114}, Direction:down
 Valid Coordination: {X=22,Y=115}, Direction:down
@@ -3773,7 +3774,7 @@ Valid Coordination: {X=22,Y=119}, Direction:down
 Valid Coordination: {X=22,Y=120}, Direction:down
 Valid Coordination: {X=22,Y=121}, Direction:down
 Valid Coordination: {X=22,Y=122}, Direction:down
-Invalid direction down, Change direction to left
+
 Valid Coordination: {X=21,Y=122}, Direction:left
 Valid Coordination: {X=20,Y=122}, Direction:left
 Valid Coordination: {X=19,Y=122}, Direction:left
@@ -3791,7 +3792,7 @@ Valid Coordination: {X=8,Y=122}, Direction:left
 Valid Coordination: {X=7,Y=122}, Direction:left
 Valid Coordination: {X=6,Y=122}, Direction:left
 Valid Coordination: {X=5,Y=122}, Direction:left
-Invalid direction left, Change direction to up
+
 Valid Coordination: {X=5,Y=121}, Direction:up
 Valid Coordination: {X=5,Y=120}, Direction:up
 Valid Coordination: {X=5,Y=119}, Direction:up
@@ -3858,7 +3859,7 @@ Valid Coordination: {X=5,Y=59}, Direction:up
 Valid Coordination: {X=5,Y=58}, Direction:up
 Valid Coordination: {X=5,Y=57}, Direction:up
 Valid Coordination: {X=5,Y=56}, Direction:up
-Invalid direction up, Change direction to right
+
 Valid Coordination: {X=6,Y=56}, Direction:right
 Valid Coordination: {X=7,Y=56}, Direction:right
 Valid Coordination: {X=8,Y=56}, Direction:right
@@ -3893,7 +3894,7 @@ Valid Coordination: {X=36,Y=56}, Direction:right
 Valid Coordination: {X=37,Y=56}, Direction:right
 Valid Coordination: {X=38,Y=56}, Direction:right
 Valid Coordination: {X=39,Y=56}, Direction:right
-Invalid direction right, Change direction to down
+
 Valid Coordination: {X=39,Y=57}, Direction:down
 Valid Coordination: {X=39,Y=58}, Direction:down
 Valid Coordination: {X=39,Y=59}, Direction:down
@@ -3927,7 +3928,7 @@ Valid Coordination: {X=39,Y=86}, Direction:down
 Valid Coordination: {X=39,Y=87}, Direction:down
 Valid Coordination: {X=39,Y=88}, Direction:down
 Valid Coordination: {X=39,Y=89}, Direction:down
-Invalid direction down, Change direction to left
+
 Valid Coordination: {X=38,Y=89}, Direction:left
 Valid Coordination: {X=37,Y=89}, Direction:left
 Valid Coordination: {X=36,Y=89}, Direction:left
@@ -3959,7 +3960,7 @@ Valid Coordination: {X=11,Y=89}, Direction:left
 Valid Coordination: {X=10,Y=89}, Direction:left
 Valid Coordination: {X=9,Y=89}, Direction:left
 Valid Coordination: {X=8,Y=89}, Direction:left
-Invalid direction left, Change direction to up
+
 Valid Coordination: {X=8,Y=88}, Direction:up
 Valid Coordination: {X=8,Y=87}, Direction:up
 Valid Coordination: {X=8,Y=86}, Direction:up
@@ -3994,7 +3995,7 @@ Valid Coordination: {X=8,Y=58}, Direction:up
 Valid Coordination: {X=8,Y=57}, Direction:up
 Valid Coordination: {X=8,Y=56}, Direction:up
 Valid Coordination: {X=8,Y=55}, Direction:up
-Invalid direction up, Change direction to right
+
 Valid Coordination: {X=9,Y=55}, Direction:right
 Valid Coordination: {X=10,Y=55}, Direction:right
 Valid Coordination: {X=11,Y=55}, Direction:right
@@ -4017,7 +4018,7 @@ Valid Coordination: {X=27,Y=55}, Direction:right
 Valid Coordination: {X=28,Y=55}, Direction:right
 Valid Coordination: {X=29,Y=55}, Direction:right
 Valid Coordination: {X=30,Y=55}, Direction:right
-Invalid direction right, Change direction to down
+
 Valid Coordination: {X=30,Y=56}, Direction:down
 Valid Coordination: {X=30,Y=57}, Direction:down
 Valid Coordination: {X=30,Y=58}, Direction:down
@@ -4053,7 +4054,7 @@ Valid Coordination: {X=30,Y=87}, Direction:down
 Valid Coordination: {X=30,Y=88}, Direction:down
 Valid Coordination: {X=30,Y=89}, Direction:down
 Valid Coordination: {X=30,Y=90}, Direction:down
-Invalid direction down, Change direction to left
+
 Valid Coordination: {X=29,Y=90}, Direction:left
 Valid Coordination: {X=28,Y=90}, Direction:left
 Valid Coordination: {X=27,Y=90}, Direction:left
@@ -4080,7 +4081,7 @@ Valid Coordination: {X=7,Y=90}, Direction:left
 Valid Coordination: {X=6,Y=90}, Direction:left
 Valid Coordination: {X=5,Y=90}, Direction:left
 Valid Coordination: {X=4,Y=90}, Direction:left
-Invalid direction left, Change direction to up
+
 Valid Coordination: {X=4,Y=89}, Direction:up
 Valid Coordination: {X=4,Y=88}, Direction:up
 Valid Coordination: {X=4,Y=87}, Direction:up
@@ -4121,7 +4122,7 @@ Valid Coordination: {X=4,Y=53}, Direction:up
 Valid Coordination: {X=4,Y=52}, Direction:up
 Valid Coordination: {X=4,Y=51}, Direction:up
 Valid Coordination: {X=4,Y=50}, Direction:up
-Invalid direction up, Change direction to right
+
 Valid Coordination: {X=5,Y=50}, Direction:right
 Valid Coordination: {X=6,Y=50}, Direction:right
 Valid Coordination: {X=7,Y=50}, Direction:right
@@ -4151,12 +4152,12 @@ Valid Coordination: {X=30,Y=50}, Direction:right
 Valid Coordination: {X=31,Y=50}, Direction:right
 Valid Coordination: {X=32,Y=50}, Direction:right
 Valid Coordination: {X=33,Y=50}, Direction:right
-Invalid direction right, Change direction to down
+
 Valid Coordination: {X=33,Y=51}, Direction:down
 Valid Coordination: {X=33,Y=52}, Direction:down
 Valid Coordination: {X=33,Y=53}, Direction:down
 Valid Coordination: {X=33,Y=54}, Direction:down
-Invalid direction down, Change direction to left
+
 Valid Coordination: {X=32,Y=54}, Direction:left
 Valid Coordination: {X=31,Y=54}, Direction:left
 Valid Coordination: {X=30,Y=54}, Direction:left
@@ -4174,7 +4175,7 @@ Valid Coordination: {X=19,Y=54}, Direction:left
 Valid Coordination: {X=18,Y=54}, Direction:left
 Valid Coordination: {X=17,Y=54}, Direction:left
 Valid Coordination: {X=16,Y=54}, Direction:left
-Invalid direction left, Change direction to up
+
 Valid Coordination: {X=16,Y=53}, Direction:up
 Valid Coordination: {X=16,Y=52}, Direction:up
 Valid Coordination: {X=16,Y=51}, Direction:up
@@ -4217,7 +4218,7 @@ Valid Coordination: {X=16,Y=15}, Direction:up
 Valid Coordination: {X=16,Y=14}, Direction:up
 Valid Coordination: {X=16,Y=13}, Direction:up
 Valid Coordination: {X=16,Y=12}, Direction:up
-Invalid direction up, Change direction to right
+
 Valid Coordination: {X=17,Y=12}, Direction:right
 Valid Coordination: {X=18,Y=12}, Direction:right
 Valid Coordination: {X=19,Y=12}, Direction:right
@@ -4244,7 +4245,7 @@ Valid Coordination: {X=39,Y=12}, Direction:right
 Valid Coordination: {X=40,Y=12}, Direction:right
 Valid Coordination: {X=41,Y=12}, Direction:right
 Valid Coordination: {X=42,Y=12}, Direction:right
-Invalid direction right, Change direction to down
+
 Valid Coordination: {X=42,Y=13}, Direction:down
 Valid Coordination: {X=42,Y=14}, Direction:down
 Valid Coordination: {X=42,Y=15}, Direction:down
@@ -4275,7 +4276,7 @@ Valid Coordination: {X=42,Y=39}, Direction:down
 Valid Coordination: {X=42,Y=40}, Direction:down
 Valid Coordination: {X=42,Y=41}, Direction:down
 Valid Coordination: {X=42,Y=42}, Direction:down
-Invalid direction down, Change direction to left
+
 Valid Coordination: {X=41,Y=42}, Direction:left
 Valid Coordination: {X=40,Y=42}, Direction:left
 Valid Coordination: {X=39,Y=42}, Direction:left
@@ -4312,7 +4313,7 @@ Valid Coordination: {X=9,Y=42}, Direction:left
 Valid Coordination: {X=8,Y=42}, Direction:left
 Valid Coordination: {X=7,Y=42}, Direction:left
 Valid Coordination: {X=6,Y=42}, Direction:left
-Invalid direction left, Change direction to up
+
 Valid Coordination: {X=6,Y=41}, Direction:up
 Valid Coordination: {X=6,Y=40}, Direction:up
 Valid Coordination: {X=6,Y=39}, Direction:up
@@ -4345,7 +4346,7 @@ Valid Coordination: {X=6,Y=13}, Direction:up
 Valid Coordination: {X=6,Y=12}, Direction:up
 Valid Coordination: {X=6,Y=11}, Direction:up
 Valid Coordination: {X=6,Y=10}, Direction:up
-Invalid direction up, Change direction to right
+
 Valid Coordination: {X=7,Y=10}, Direction:right
 Valid Coordination: {X=8,Y=10}, Direction:right
 Valid Coordination: {X=9,Y=10}, Direction:right
@@ -4427,7 +4428,7 @@ Valid Coordination: {X=84,Y=10}, Direction:right
 Valid Coordination: {X=85,Y=10}, Direction:right
 Valid Coordination: {X=86,Y=10}, Direction:right
 Valid Coordination: {X=87,Y=10}, Direction:right
-Invalid direction right, Change direction to down
+
 Valid Coordination: {X=87,Y=11}, Direction:down
 Valid Coordination: {X=87,Y=12}, Direction:down
 Valid Coordination: {X=87,Y=13}, Direction:down
@@ -4474,11 +4475,11 @@ Valid Coordination: {X=87,Y=53}, Direction:down
 Valid Coordination: {X=87,Y=54}, Direction:down
 Valid Coordination: {X=87,Y=55}, Direction:down
 Valid Coordination: {X=87,Y=56}, Direction:down
-Invalid direction down, Change direction to left
+
 Valid Coordination: {X=86,Y=56}, Direction:left
 Valid Coordination: {X=85,Y=56}, Direction:left
 Valid Coordination: {X=84,Y=56}, Direction:left
-Invalid direction left, Change direction to up
+
 Valid Coordination: {X=84,Y=55}, Direction:up
 Valid Coordination: {X=84,Y=54}, Direction:up
 Valid Coordination: {X=84,Y=53}, Direction:up
@@ -4518,3 +4519,471 @@ Valid Coordination: {X=84,Y=20}, Direction:up
 Valid Coordination: {X=84,Y=19}, Direction:up
 Valid Coordination: {X=84,Y=18}, Direction:up
 Valid Coordination: {X=84,Y=17}, Direction:up
+Valid Coordination: {X=84,Y=16}, Direction:up
+Valid Coordination: {X=84,Y=15}, Direction:up
+Valid Coordination: {X=84,Y=14}, Direction:up
+Valid Coordination: {X=84,Y=13}, Direction:up
+Valid Coordination: {X=84,Y=12}, Direction:up
+Valid Coordination: {X=84,Y=11}, Direction:up
+Valid Coordination: {X=84,Y=10}, Direction:up
+Valid Coordination: {X=84,Y=9}, Direction:up
+Valid Coordination: {X=84,Y=8}, Direction:up
+Valid Coordination: {X=84,Y=7}, Direction:up
+Valid Coordination: {X=84,Y=6}, Direction:up
+Valid Coordination: {X=84,Y=5}, Direction:up
+
+Valid Coordination: {X=85,Y=5}, Direction:right
+Valid Coordination: {X=86,Y=5}, Direction:right
+Valid Coordination: {X=87,Y=5}, Direction:right
+Valid Coordination: {X=88,Y=5}, Direction:right
+Valid Coordination: {X=89,Y=5}, Direction:right
+Valid Coordination: {X=90,Y=5}, Direction:right
+Valid Coordination: {X=91,Y=5}, Direction:right
+Valid Coordination: {X=92,Y=5}, Direction:right
+Valid Coordination: {X=93,Y=5}, Direction:right
+Valid Coordination: {X=94,Y=5}, Direction:right
+Valid Coordination: {X=95,Y=5}, Direction:right
+Valid Coordination: {X=96,Y=5}, Direction:right
+Valid Coordination: {X=97,Y=5}, Direction:right
+Valid Coordination: {X=98,Y=5}, Direction:right
+Valid Coordination: {X=99,Y=5}, Direction:right
+Valid Coordination: {X=100,Y=5}, Direction:right
+Valid Coordination: {X=101,Y=5}, Direction:right
+Valid Coordination: {X=102,Y=5}, Direction:right
+Valid Coordination: {X=103,Y=5}, Direction:right
+Valid Coordination: {X=104,Y=5}, Direction:right
+Valid Coordination: {X=105,Y=5}, Direction:right
+Valid Coordination: {X=106,Y=5}, Direction:right
+Valid Coordination: {X=107,Y=5}, Direction:right
+Valid Coordination: {X=108,Y=5}, Direction:right
+Valid Coordination: {X=109,Y=5}, Direction:right
+Valid Coordination: {X=110,Y=5}, Direction:right
+Valid Coordination: {X=111,Y=5}, Direction:right
+Valid Coordination: {X=112,Y=5}, Direction:right
+Valid Coordination: {X=113,Y=5}, Direction:right
+Valid Coordination: {X=114,Y=5}, Direction:right
+Valid Coordination: {X=115,Y=5}, Direction:right
+Valid Coordination: {X=116,Y=5}, Direction:right
+Valid Coordination: {X=117,Y=5}, Direction:right
+Valid Coordination: {X=118,Y=5}, Direction:right
+Valid Coordination: {X=119,Y=5}, Direction:right
+Valid Coordination: {X=120,Y=5}, Direction:right
+Valid Coordination: {X=121,Y=5}, Direction:right
+Valid Coordination: {X=122,Y=5}, Direction:right
+Valid Coordination: {X=123,Y=5}, Direction:right
+Valid Coordination: {X=124,Y=5}, Direction:right
+Valid Coordination: {X=125,Y=5}, Direction:right
+
+Valid Coordination: {X=125,Y=6}, Direction:down
+Valid Coordination: {X=125,Y=7}, Direction:down
+Valid Coordination: {X=125,Y=8}, Direction:down
+Valid Coordination: {X=125,Y=9}, Direction:down
+Valid Coordination: {X=125,Y=10}, Direction:down
+Valid Coordination: {X=125,Y=11}, Direction:down
+Valid Coordination: {X=125,Y=12}, Direction:down
+Valid Coordination: {X=125,Y=13}, Direction:down
+Valid Coordination: {X=125,Y=14}, Direction:down
+Valid Coordination: {X=125,Y=15}, Direction:down
+Valid Coordination: {X=125,Y=16}, Direction:down
+Valid Coordination: {X=125,Y=17}, Direction:down
+Valid Coordination: {X=125,Y=18}, Direction:down
+Valid Coordination: {X=125,Y=19}, Direction:down
+Valid Coordination: {X=125,Y=20}, Direction:down
+Valid Coordination: {X=125,Y=21}, Direction:down
+Valid Coordination: {X=125,Y=22}, Direction:down
+Valid Coordination: {X=125,Y=23}, Direction:down
+Valid Coordination: {X=125,Y=24}, Direction:down
+Valid Coordination: {X=125,Y=25}, Direction:down
+Valid Coordination: {X=125,Y=26}, Direction:down
+Valid Coordination: {X=125,Y=27}, Direction:down
+Valid Coordination: {X=125,Y=28}, Direction:down
+Valid Coordination: {X=125,Y=29}, Direction:down
+Valid Coordination: {X=125,Y=30}, Direction:down
+
+Valid Coordination: {X=124,Y=30}, Direction:left
+Valid Coordination: {X=123,Y=30}, Direction:left
+Valid Coordination: {X=122,Y=30}, Direction:left
+Valid Coordination: {X=121,Y=30}, Direction:left
+Valid Coordination: {X=120,Y=30}, Direction:left
+Valid Coordination: {X=119,Y=30}, Direction:left
+Valid Coordination: {X=118,Y=30}, Direction:left
+Valid Coordination: {X=117,Y=30}, Direction:left
+Valid Coordination: {X=116,Y=30}, Direction:left
+Valid Coordination: {X=115,Y=30}, Direction:left
+Valid Coordination: {X=114,Y=30}, Direction:left
+Valid Coordination: {X=113,Y=30}, Direction:left
+Valid Coordination: {X=112,Y=30}, Direction:left
+Valid Coordination: {X=111,Y=30}, Direction:left
+Valid Coordination: {X=110,Y=30}, Direction:left
+Valid Coordination: {X=109,Y=30}, Direction:left
+Valid Coordination: {X=108,Y=30}, Direction:left
+Valid Coordination: {X=107,Y=30}, Direction:left
+Valid Coordination: {X=106,Y=30}, Direction:left
+Valid Coordination: {X=105,Y=30}, Direction:left
+Valid Coordination: {X=104,Y=30}, Direction:left
+Valid Coordination: {X=103,Y=30}, Direction:left
+Valid Coordination: {X=102,Y=30}, Direction:left
+Valid Coordination: {X=101,Y=30}, Direction:left
+Valid Coordination: {X=100,Y=30}, Direction:left
+Valid Coordination: {X=99,Y=30}, Direction:left
+Valid Coordination: {X=98,Y=30}, Direction:left
+Valid Coordination: {X=97,Y=30}, Direction:left
+Valid Coordination: {X=96,Y=30}, Direction:left
+Valid Coordination: {X=95,Y=30}, Direction:left
+Valid Coordination: {X=94,Y=30}, Direction:left
+Valid Coordination: {X=93,Y=30}, Direction:left
+Valid Coordination: {X=92,Y=30}, Direction:left
+Valid Coordination: {X=91,Y=30}, Direction:left
+
+Valid Coordination: {X=91,Y=29}, Direction:up
+Valid Coordination: {X=91,Y=28}, Direction:up
+Valid Coordination: {X=91,Y=27}, Direction:up
+Valid Coordination: {X=91,Y=26}, Direction:up
+Valid Coordination: {X=91,Y=25}, Direction:up
+Valid Coordination: {X=91,Y=24}, Direction:up
+Valid Coordination: {X=91,Y=23}, Direction:up
+Valid Coordination: {X=91,Y=22}, Direction:up
+Valid Coordination: {X=91,Y=21}, Direction:up
+Valid Coordination: {X=91,Y=20}, Direction:up
+Valid Coordination: {X=91,Y=19}, Direction:up
+Valid Coordination: {X=91,Y=18}, Direction:up
+Valid Coordination: {X=91,Y=17}, Direction:up
+Valid Coordination: {X=91,Y=16}, Direction:up
+Valid Coordination: {X=91,Y=15}, Direction:up
+Valid Coordination: {X=91,Y=14}, Direction:up
+Valid Coordination: {X=91,Y=13}, Direction:up
+Valid Coordination: {X=91,Y=12}, Direction:up
+
+Valid Coordination: {X=92,Y=12}, Direction:right
+Valid Coordination: {X=93,Y=12}, Direction:right
+Valid Coordination: {X=94,Y=12}, Direction:right
+Valid Coordination: {X=95,Y=12}, Direction:right
+Valid Coordination: {X=96,Y=12}, Direction:right
+Valid Coordination: {X=97,Y=12}, Direction:right
+Valid Coordination: {X=98,Y=12}, Direction:right
+Valid Coordination: {X=99,Y=12}, Direction:right
+Valid Coordination: {X=100,Y=12}, Direction:right
+Valid Coordination: {X=101,Y=12}, Direction:right
+
+Valid Coordination: {X=101,Y=13}, Direction:down
+Valid Coordination: {X=101,Y=14}, Direction:down
+Valid Coordination: {X=101,Y=15}, Direction:down
+Valid Coordination: {X=101,Y=16}, Direction:down
+Valid Coordination: {X=101,Y=17}, Direction:down
+Valid Coordination: {X=101,Y=18}, Direction:down
+Valid Coordination: {X=101,Y=19}, Direction:down
+Valid Coordination: {X=101,Y=20}, Direction:down
+Valid Coordination: {X=101,Y=21}, Direction:down
+Valid Coordination: {X=101,Y=22}, Direction:down
+Valid Coordination: {X=101,Y=23}, Direction:down
+Valid Coordination: {X=101,Y=24}, Direction:down
+Valid Coordination: {X=101,Y=25}, Direction:down
+Valid Coordination: {X=101,Y=26}, Direction:down
+Valid Coordination: {X=101,Y=27}, Direction:down
+Valid Coordination: {X=101,Y=28}, Direction:down
+Valid Coordination: {X=101,Y=29}, Direction:down
+Valid Coordination: {X=101,Y=30}, Direction:down
+Valid Coordination: {X=101,Y=31}, Direction:down
+Valid Coordination: {X=101,Y=32}, Direction:down
+Valid Coordination: {X=101,Y=33}, Direction:down
+Valid Coordination: {X=101,Y=34}, Direction:down
+Valid Coordination: {X=101,Y=35}, Direction:down
+Valid Coordination: {X=101,Y=36}, Direction:down
+Valid Coordination: {X=101,Y=37}, Direction:down
+Valid Coordination: {X=101,Y=38}, Direction:down
+Valid Coordination: {X=101,Y=39}, Direction:down
+Valid Coordination: {X=101,Y=40}, Direction:down
+Valid Coordination: {X=101,Y=41}, Direction:down
+Valid Coordination: {X=101,Y=42}, Direction:down
+Valid Coordination: {X=101,Y=43}, Direction:down
+Valid Coordination: {X=101,Y=44}, Direction:down
+Valid Coordination: {X=101,Y=45}, Direction:down
+Valid Coordination: {X=101,Y=46}, Direction:down
+Valid Coordination: {X=101,Y=47}, Direction:down
+Valid Coordination: {X=101,Y=48}, Direction:down
+Valid Coordination: {X=101,Y=49}, Direction:down
+Valid Coordination: {X=101,Y=50}, Direction:down
+Valid Coordination: {X=101,Y=51}, Direction:down
+Valid Coordination: {X=101,Y=52}, Direction:down
+Valid Coordination: {X=101,Y=53}, Direction:down
+Valid Coordination: {X=101,Y=54}, Direction:down
+Valid Coordination: {X=101,Y=55}, Direction:down
+Valid Coordination: {X=101,Y=56}, Direction:down
+Valid Coordination: {X=101,Y=57}, Direction:down
+Valid Coordination: {X=101,Y=58}, Direction:down
+Valid Coordination: {X=101,Y=59}, Direction:down
+Valid Coordination: {X=101,Y=60}, Direction:down
+Valid Coordination: {X=101,Y=61}, Direction:down
+Valid Coordination: {X=101,Y=62}, Direction:down
+
+Valid Coordination: {X=100,Y=62}, Direction:left
+Valid Coordination: {X=99,Y=62}, Direction:left
+
+Valid Coordination: {X=99,Y=61}, Direction:up
+Valid Coordination: {X=99,Y=60}, Direction:up
+Valid Coordination: {X=99,Y=59}, Direction:up
+Valid Coordination: {X=99,Y=58}, Direction:up
+Valid Coordination: {X=99,Y=57}, Direction:up
+Valid Coordination: {X=99,Y=56}, Direction:up
+Valid Coordination: {X=99,Y=55}, Direction:up
+Valid Coordination: {X=99,Y=54}, Direction:up
+Valid Coordination: {X=99,Y=53}, Direction:up
+Valid Coordination: {X=99,Y=52}, Direction:up
+Valid Coordination: {X=99,Y=51}, Direction:up
+Valid Coordination: {X=99,Y=50}, Direction:up
+Valid Coordination: {X=99,Y=49}, Direction:up
+Valid Coordination: {X=99,Y=48}, Direction:up
+Valid Coordination: {X=99,Y=47}, Direction:up
+Valid Coordination: {X=99,Y=46}, Direction:up
+Valid Coordination: {X=99,Y=45}, Direction:up
+Valid Coordination: {X=99,Y=44}, Direction:up
+Valid Coordination: {X=99,Y=43}, Direction:up
+Valid Coordination: {X=99,Y=42}, Direction:up
+Valid Coordination: {X=99,Y=41}, Direction:up
+Valid Coordination: {X=99,Y=40}, Direction:up
+Valid Coordination: {X=99,Y=39}, Direction:up
+Valid Coordination: {X=99,Y=38}, Direction:up
+Valid Coordination: {X=99,Y=37}, Direction:up
+Valid Coordination: {X=99,Y=36}, Direction:up
+Valid Coordination: {X=99,Y=35}, Direction:up
+Valid Coordination: {X=99,Y=34}, Direction:up
+Valid Coordination: {X=99,Y=33}, Direction:up
+Valid Coordination: {X=99,Y=32}, Direction:up
+Valid Coordination: {X=99,Y=31}, Direction:up
+Valid Coordination: {X=99,Y=30}, Direction:up
+Valid Coordination: {X=99,Y=29}, Direction:up
+Valid Coordination: {X=99,Y=28}, Direction:up
+Valid Coordination: {X=99,Y=27}, Direction:up
+Valid Coordination: {X=99,Y=26}, Direction:up
+Valid Coordination: {X=99,Y=25}, Direction:up
+Valid Coordination: {X=99,Y=24}, Direction:up
+
+Valid Coordination: {X=100,Y=24}, Direction:right
+Valid Coordination: {X=101,Y=24}, Direction:right
+Valid Coordination: {X=102,Y=24}, Direction:right
+Valid Coordination: {X=103,Y=24}, Direction:right
+Valid Coordination: {X=104,Y=24}, Direction:right
+Valid Coordination: {X=105,Y=24}, Direction:right
+Valid Coordination: {X=106,Y=24}, Direction:right
+Valid Coordination: {X=107,Y=24}, Direction:right
+Valid Coordination: {X=108,Y=24}, Direction:right
+Valid Coordination: {X=109,Y=24}, Direction:right
+Valid Coordination: {X=110,Y=24}, Direction:right
+Valid Coordination: {X=111,Y=24}, Direction:right
+Valid Coordination: {X=112,Y=24}, Direction:right
+Valid Coordination: {X=113,Y=24}, Direction:right
+Valid Coordination: {X=114,Y=24}, Direction:right
+Valid Coordination: {X=115,Y=24}, Direction:right
+Valid Coordination: {X=116,Y=24}, Direction:right
+Valid Coordination: {X=117,Y=24}, Direction:right
+Valid Coordination: {X=118,Y=24}, Direction:right
+Valid Coordination: {X=119,Y=24}, Direction:right
+Valid Coordination: {X=120,Y=24}, Direction:right
+Valid Coordination: {X=121,Y=24}, Direction:right
+Valid Coordination: {X=122,Y=24}, Direction:right
+Valid Coordination: {X=123,Y=24}, Direction:right
+Valid Coordination: {X=124,Y=24}, Direction:right
+Valid Coordination: {X=125,Y=24}, Direction:right
+Valid Coordination: {X=126,Y=24}, Direction:right
+
+Valid Coordination: {X=126,Y=25}, Direction:down
+Valid Coordination: {X=126,Y=26}, Direction:down
+Valid Coordination: {X=126,Y=27}, Direction:down
+Valid Coordination: {X=126,Y=28}, Direction:down
+Valid Coordination: {X=126,Y=29}, Direction:down
+Valid Coordination: {X=126,Y=30}, Direction:down
+Valid Coordination: {X=126,Y=31}, Direction:down
+Valid Coordination: {X=126,Y=32}, Direction:down
+Valid Coordination: {X=126,Y=33}, Direction:down
+Valid Coordination: {X=126,Y=34}, Direction:down
+Valid Coordination: {X=126,Y=35}, Direction:down
+Valid Coordination: {X=126,Y=36}, Direction:down
+Valid Coordination: {X=126,Y=37}, Direction:down
+Valid Coordination: {X=126,Y=38}, Direction:down
+Valid Coordination: {X=126,Y=39}, Direction:down
+Valid Coordination: {X=126,Y=40}, Direction:down
+Valid Coordination: {X=126,Y=41}, Direction:down
+Valid Coordination: {X=126,Y=42}, Direction:down
+Valid Coordination: {X=126,Y=43}, Direction:down
+Valid Coordination: {X=126,Y=44}, Direction:down
+Valid Coordination: {X=126,Y=45}, Direction:down
+Valid Coordination: {X=126,Y=46}, Direction:down
+Valid Coordination: {X=126,Y=47}, Direction:down
+Valid Coordination: {X=126,Y=48}, Direction:down
+Valid Coordination: {X=126,Y=49}, Direction:down
+Valid Coordination: {X=126,Y=50}, Direction:down
+Valid Coordination: {X=126,Y=51}, Direction:down
+Valid Coordination: {X=126,Y=52}, Direction:down
+Valid Coordination: {X=126,Y=53}, Direction:down
+Valid Coordination: {X=126,Y=54}, Direction:down
+Valid Coordination: {X=126,Y=55}, Direction:down
+Valid Coordination: {X=126,Y=56}, Direction:down
+Valid Coordination: {X=126,Y=57}, Direction:down
+Valid Coordination: {X=126,Y=58}, Direction:down
+Valid Coordination: {X=126,Y=59}, Direction:down
+Valid Coordination: {X=126,Y=60}, Direction:down
+Valid Coordination: {X=126,Y=61}, Direction:down
+Valid Coordination: {X=126,Y=62}, Direction:down
+Valid Coordination: {X=126,Y=63}, Direction:down
+Valid Coordination: {X=126,Y=64}, Direction:down
+Valid Coordination: {X=126,Y=65}, Direction:down
+Valid Coordination: {X=126,Y=66}, Direction:down
+Valid Coordination: {X=126,Y=67}, Direction:down
+Valid Coordination: {X=126,Y=68}, Direction:down
+Valid Coordination: {X=126,Y=69}, Direction:down
+Valid Coordination: {X=126,Y=70}, Direction:down
+Valid Coordination: {X=126,Y=71}, Direction:down
+Valid Coordination: {X=126,Y=72}, Direction:down
+Valid Coordination: {X=126,Y=73}, Direction:down
+Valid Coordination: {X=126,Y=74}, Direction:down
+Valid Coordination: {X=126,Y=75}, Direction:down
+
+Valid Coordination: {X=125,Y=75}, Direction:left
+Valid Coordination: {X=124,Y=75}, Direction:left
+Valid Coordination: {X=123,Y=75}, Direction:left
+Valid Coordination: {X=122,Y=75}, Direction:left
+Valid Coordination: {X=121,Y=75}, Direction:left
+
+Valid Coordination: {X=121,Y=74}, Direction:up
+Valid Coordination: {X=121,Y=73}, Direction:up
+Valid Coordination: {X=121,Y=72}, Direction:up
+
+Valid Coordination: {X=122,Y=72}, Direction:right
+Valid Coordination: {X=123,Y=72}, Direction:right
+Valid Coordination: {X=124,Y=72}, Direction:right
+Valid Coordination: {X=125,Y=72}, Direction:right
+Valid Coordination: {X=126,Y=72}, Direction:right
+Valid Coordination: {X=127,Y=72}, Direction:right
+Valid Coordination: {X=128,Y=72}, Direction:right
+Valid Coordination: {X=129,Y=72}, Direction:right
+
+......#........#..........#.................##......................#.............#..................#............#............#..
+.....#............................................#.......................#.......##.................#..#...................#.#...
+......#...................#............................#.....#.........#................................................#.........
+...........................................#.......#..........#..#......#.........#.#.#.#................#.##........##...........
+........#.........................................#.......#.....#..........#...#....##....#..#.......##................#......#...
+...................#..#.....................................................#.......+----------------------------------------+#...
+....#..................#..........#........#.............#..................+-------+------------------------------------+#..|....
+......#..............#..................#...........#......#.....#..........|.......|........#..#.#.....................#|...|#...
+......#...#...............................................#.....#...........|.......|.....#..........#...................|...|....
+......#......#..........................................#...................|.......|......#....#..#................#..##|..#|....
+......+---------------------------------------------------------------------+-------+--+#................................|...|....
+......|.........#..........#..........................#.##..................|...#...|..|...#.............................|...|....
+......|......#..+-------------------------+#......#...+---------------------+---+#..|..|...+---------+#...........#.....#|..#|....
+......|#........|........#................|.#.....+---+---------------+#....|...|...|..|...|.........|.............#.....|...|....
+......|#........|.........................|.......|...|......#........|.....|...|...|..|...|.........|..#....#.#.....#...|..#|....
+...#..|...#.....|......#........#.........|.......|...|#..............|.....|...|..#|#.|..#|.#.......|............#......|...|..##
+......|.........|..........##..#..#.......|..#....|...|...........#...|.....|...|...|..|...|.........|.............#.....|#..|....
+......|.........|....#...#................|......#|..#|.#.....#.......|.....|..#|...|..|...|.........|...................|.#.|..#.
+......|.........|#................#.......|.....#.|.#.|.+-------------+-----+---+---+--+---+---------+---------+#..#.#...|...|....
+#.....|.........|.....#...................|##.....|.#.|.|.............|.#...|...|..#|..|...|.........|........#|.........|...|....
+.#....|.....##..|...#...#......#..........|.....#.|...|.|.............|.....|...|...|.#|#..|..#......|.......#.|.........|...|....
+...#..|#..#.+---+-------------------------+-------+---+-+-----------+#|.#..#+---+...|..|...|.........|.........|.........|...|....
+......|.....|...|.#.#..............#...#..|.......|...|.|...........|.|#...#....#.#.|..|...|#........|.........|......##.|...|....
+......|#....|...|................#.+------+-------+---+-+-----------+-+--------+#...|..|.#.|..#....#.|.......#.|.........|...|....
+......|....#|...|.#......#.........|.#....|...#...|...|.|...........|.|.....##.|....|..|...|.......+-+---------+---------+---++#..
+......|.....|...|...........#......|......|...+---+---+-+------+#...|.|#.......|....|..|...|.......|.|.........|#........|...||...
+......|.....|...|..................|..##..|...|...|...|.|......|....|.|........|...#|..|...|.....#.|#|.........|#...#....|#..||...
+......|.....|...|..................|......|...|...|#..|.|......|....|.|........|....|#.|...|.......|.|.........|.........|...||...
+......|.....|...|.........#........|......|...|...|...|.|......|....|#|.#.....#|....|..|...|....#.#|.|...#.....|.........|...||...
+......|.....|...|.#...........#....|......|...|...|...|.|...#..|.#.#|.|........|....|.#|...|.......|.|.........|.......#.|...||...
+......|.....|...|..#....#..#.......|......|...|...|...|.|......|....|.|........|....|#.|..#+-------+-+---------+---------+---+|...
+..#...|.....|...|..+---------------+------+---+---+---+-+---+##|....|.|........|....|..|.........#.|.|.........|........#|...#|#..
+#.....|.....|...|..|......#.....#..|......|...|...|...|.|...|..|#...|.|........|....|..|.#.........|.|....#....|.........|....|...
+......|.....|...|..|..#...+-+#...#.|......|.#.|...|#..|.|...|..|....|.|........|..#.|.#|.....#.....|.|.........|.........|....|#..
+......|.....|..#|..|.#....|.|+-----+------+---+---+---+-+---+--+----+-+--------+----+--+---------+#|.|.........|.........|....|...
+#.....|.....|...|..|..#...|.||.#.#.|......|...|...|...|.|...|..|....|.|........|....|..|..#......|.|.|.........|..#......|....|.#.
+......|#...#|...|..|..#...|.||.#...|......|#..|...|...|.|...|#.|....|.|........|#...|..|.........|.|.|.........|.....##..|..#.|...
+.#....|.#...|...|..|......|.||.....|......|#..|...|...|.|...|..|....|.|........|....|..|.........|.|.|.........|...#.....|....|...
+......|.....|...|#.|...#..|.||.....|......|+--+---+---+-+---+--+----+-+--------+--+#|..|.........|.|.|.........|.........|....|...
+......|..#..|...|..|......|.||.....|......||..^...|..#|.|...|..|....|.|.#......|..|.|..|.........|.|.|.#..#....|........#|..#.|...
+......|.....|...|..|......|.||.....|......||......|...|.|...|#.|...#|.|........|..|.|..|.........|.|.|..#......|.........|....|...
+......|.....|...|..|#.....|.||.....|..#...||...#..|...|.|...|..|...++-+--------+--+-+--+---------+-+-+-+#..#...|........#|....|..#
+.....#+-----+---+--+------+-++-----+------+|......|...|.|...|..|#..||.|........|..|.|..|....#....|.|.|.|......#|...##....|....|...
+............|.#.|..|....#.|.||.....|......#|......|...|.|...|..|...||.|#.......|..|.|#.|.........|.|.|.|....#.#|.........|.#..|...
+............|#..|..|......|.||.#...|.......|......|...|.|...|..|...||.|..#...#.|..|.|..|......#..|.|.|.|....#..|..#......|....|...
+....#.....##|.#.|..|.#....|.||#....|.......|......|...|.|...|..|...||.|....#...|..|.|.#|......#..|.|.|.|.......|.........|....|.##
+..........+-+---+--+------+-++-----+-------+------+---+-+---+--+---++-+--+#....|..|.|..|.........|.|.|.|.......|.........|....|...
+.......#..|.|...|.#+------+-+|.....|.......|......|...|.|...|..|...||.|..|.....|..|.|..|.........|.|.|.|.......|##..#....|....|...
+..........|.|...|.........|.#|.....|.......|#.....|...|.|...|..|...||.|..|.....|..|.|..|.........|.|.|.|.......|.........|..#.|...
+....#.....|#+---+---------+--+-----+-------+------+---+-+---+--+...||.|..|.....|..|.|..|.........|.|.|.|.......|.........|.#..|...
+....+-----+-----+---------+--+---+#|.......|......|...|.|#..|..#...||.|..|.....|..|.|..|.........|.|.|.|....#..|..#......|.#..|...
+....|.....|.....|.........|..|.#.|.|.......|......|...|.|...|......||.|..|#....|..|.|..|.........|.|.|.|.......|.........|....|...
+....|#....|.....|..#...#..|..|...|.|..#.#..|......|..#+-+---+------++-+--+-----+--+-+--+---------+-+-+-+-------+.........|#...|...
+....|.....|.....|.........|..|...|.|.......|..#...|.....|...|......||.|..|....#|..|.|##|......#..|.|.|.|.......#.........|#.#.|...
+....|...#.|...##+---------+--+---+.|.......|......|.....|...|..#...||.|..|.....|..|.|..|.#.......|.|.|.|.................|....|...
+....|#..+-+---------------+--++#.#.|......#+------+-----+---+------++-+..|.....|..|.|..|#........|.|.|#|.............##..|....|...
+....|+--+-+---------------+--++----+---+#..##.....|.....|...|......||.#..|.....|..|#+--+.......#.|.|.|.|.....#...........|....|...
+....||..|.|..........#.#..|..||....|...|#.........|.....|...|......||#...|.....|..|....#.....#...|.|.|.|.................|..#.|...
+....||..|.|.....#.........|..||....|...|..........|...#.|#..|......||....|....#|..|..............|.|.|.|.........#.......|....|...
+....||..|.|#..............|..||#...|...|.........#+-----+---+------++----+-----+--+--------------+.|.|.|....#.......#....|....|.#.
+....||..|.|...............|#.||+---+---+----------------+---++#....||#...|.....|..|.#............#.|.|.|...#....#........|....|..#
+....||..|.|...............|+-+++---+---+----------------+---++-----++----+-----+--+----------------+-+-+---------+#......|....|...
+....||..|.|...#....#.#....||.|||...|...|................|...||.....||....|.....|..|...............#+-+.|#........|#......|.#..|...
+..#.||..|.|...#...........||.|||#.#|...|.#..............|...||.....||....|#....|..|..................#.|.........|.......|....|..#
+....||..|.|.#...........##||.|||...|...|................|#..||.....||....|+----+--+--------------------+---+#....|.......|....|...
+....||..|.|...##.#........||.|||...|...|................|...||.....||....||....|..|.................#..|...|..#..|...#...|..#.|...
+....||..|.|......+--------++-+++---+---+----------------+---++-+#..||....||....|#.|..#....##...........|...|#....|.......|....|...
+....||..|#|.#....|........||.|||..#+---+----------------+---++-+---++....||....|..|........#......#....|...|.....|.#.....|....|...
+...#||..|.|...#..|.......#||.|||.......|....#...........|...||.|...|#....||....|..|..........#...#.....|...|.....|#......|..#.|...
+....||..|.|......|........||.|||...#..#|................|...||.|...|..#..||....|.#|....................|...|.....|.......|....|...
+....||..|.|......|.......#++-+++-------+----------------+---++-+---+-----++----+--+--------------------+---+-----+-------+....|...
+....||..|.|......|....#....|.|||#......|................|...||.|...|.....||....|..|..##................|...|.....|.#.....#....|...
+.#..||#.|.|......|.........|#+++-------+----------------+---++-+---+-----++----+..|...#....#........#..|...|.....|.......+----+--+
+....||..|.|......|.........|..||.......|..#.............|...||.|...|.....||....#..|....................|...|.....|......#|....|...
+....||..|.|......|.........|..||.......|.........#......|...||.|...|.....||.......|......#.............|...|.....|.......|....|...
+#..#||..|.|......|.#.......|..||.......|..#....#.+------+---++-+---+-----++-------+---------+#.........|...|..#..|.....##+----+...
+....||..|#|...#..|.....##..|..||..#....|#........|#.....|...||.|...|.....||.......|.........|.....#....|...|.....|...#....#...#...
+..#.||..|.|......|......+--+--++-------+---------+------+---++-+---+-----++---+#..|.........|..........|...|.....|.............#..
+....||..|.|......|......|..|..||.......|.........|.....#|...||.|.#.|....#||...|...|.........|......#.#.|...|.....|................
+....||..|#|......|.....#|..|..||.......|.##.....#|....#.|...||.|#..|.....||..#|...|....#....|..........|..#|....#|............#...
+#...||..|.|#.....|...#..|..|..||.......|.+-------+------+---++-+---+-----++---+---+---------+----------+---+-----+--+#............
+....||..|.|......|.....#|..|..||.......|.|..#....|......|...||.|...|.....||...|...|.........|..#.......|...|.....|..|.............
+.#..||..|.|......|#.....|..|..||.......|.|.......|..#...|...||.|...|.....||...|...|.........|#.........|.#.|.....|..|.............
+....||..|#+------+------+--+--++-------+-+-------+------+---++-+---+-----++---+---+.........|..........|...|.....|..|.............
+....||..|........|......|..|..||.......|.|.......|......|...||.|...|.....||...|...#.........|#.........|...|.....|.#|.............
+..#.||..|........|......|..|..||..#....|.|#......|......|...||.|#..|.....||...|........#....|#.........|...|.....|..|...#.........
+....||#.|..#.....|......|..|..||..+----+-+-------+------+---++-+---+-+#..||...|.............|....#.....|...|.....|..|.............
+....||..|........|......|..|..||..|....|.|.##....|......|...||.|...|.|...||...|.............|..##+-----+---+-----++#|..#..........
+....||..|......#.|..#...|..|..||..|....|.|......#+------+---++-+---+-+---+|...|..........#..|....|.....|#..|.....||.|........##...
+#...||.#+--------+------+--+--++--+----+.|..............|...||#|...|.|...#|...|.............|....|.#...|...|.#...||.|.............
+...#++-----------+------+--+--+|..|....#.|....#.........|...||.|...|.|....|...|..........#..|....|.....|...|.....||#|............#
+#....|#.........#|......|..|..#|..|......|..............|...||.|...|.|#...|...|.............|....|....#|...|.....||.|.............
+.....|...........|.#.#..|..|...|..|......|..............|...||.|...|.|....|...|.............|...#|.....|...|....#||.|.............
+.....|.#......##.|......|.#+---+--+------+--------------+---++-+...|.|....|...|#............|....|#....|...|.#...||.|.............
+.....|.........+-+------+------+--+------+--+#.##.......|...||.#...|.|....|...|.......#.....|#..#+-----+---+-----+|#|.........#...
+..##.|.........|.|.....#|......|..|......|..|...........|..#||.....|.|....|...|.............|........#.|...|.....#|.|.............
+.....|.........|.|......|......|..|......|..|......#....|...||.....|.|....|...|..........#..|..........|...|.....#|.|............#
+.....|....#....|.|##....|......|..|....#.|..|..........#+---++-----+-+----+---+-------------+----------+...|......|.|..#..........
+.....|.........|.|.....#|......|..|.#....|..|....##.........||.....|.|....|...|.............|...#......##..|......|.|.....#...#...
+.....|...#.....|.|......|......|..|......|..|...............||.....|.|....|...|............#|...........#..|......|.|........#....
+.....|.##......|.|#.....|......|..|......|..|...............||.....|.|....|...|......#......|.........#....|......|.|.............
+.....|.........|#+------+------+--+------+--+---------------++-----+-+----+---+-------------+..............|..#...|.|.............
+.....|.........|......#.|.....#|..|#.....|..|...............||.....|.|....|...|......#......#.#............|......|.|.........#...
+.....|...#.....|...#.#..|..##.#|..|......|..|...............||...##+-+----+---+----------------------------+......|.|.#...........
+.#...|.........|........|......|..|......|..|...........#...||..#....|.##.|...|..#..........#.........#....#......|.|.............
+.....|..#.#....|........|......|.#+------+--+---------------++-------+----+---+-----------------------------------+-+.............
+.....|.........|..#.....|......|.........|..|...#...........||....#..|....|...|......#......................#.....|##.#...........
+.....|.........|##......|......|.........|..|...............||.#....#|....|...|##.#.#....#........................|...............
+.....|........#|........|......|..#......|#.|...............||.......|.#.#+---+-----------------------------------+............#..
+.....|......#..|........|......|..+------+--+-------------+#||..#....|........|.......#...#.......................#.....#......#..
+.....|........#+--------+------+--+------+--+-------------+-++-------+.#......|.....................................#.............
+.....|.#.....#.........#|......|..|...#..|..|.............|.||.......#........|..............#..#................#....#..#........
+.....|.+--------------+#|.....#+--+------+--+-------------+-+|.........#......|..........#..........#.............................
+.....|.|...#..........|.|.....#...|......|..|.............|.#|................|..........................................#........
+.....|#|...#......#...|.|.........|.....#+--+-------------+..|#........#......|..............#...#.....#.#...................#....
+#....|.|..............|.|.........|.........|..##...#.....#..|........#.......|..................................#................
+.....|.|..#..........#|#+---------+---------+----------------+..#..#....#.....|...................................................
+.....|.|..........#...|...........|.........|............#...#.......#........|...................................................
+...#.|.|..............|..........#+---------+---------------------------------+.....#...........#.................................
+.....|.|..............|.........##.#........|....#........................#...#...............................................#...
+...#.|.|..............|................#....|..................#........................#............#...............#....#.#.....
+.....|.|..............|.....................|.................##.......#...............#.........#..................#.............
+....#+-+--------------+..........#..........|.......................#..#..#...............#..............##.......................
+#...#..|..............##....................|..........#...........#...........#..............#.#.........#........#...#..........
+.......|..................#.....#...........|........#..............#.............#..........#....................#.........#.....
+......#+------------------------------------+.................#........#.....#..........................#...#.........#...........
+...............................#............#.....#...........................#...............#........#..........................
+............#..#......#...#..#.....................#...............#.........#...........................................#.....#..
+.......#..#..................#............#...........#..............................................................#............
+....#......#.##..#......##..........#.......#............#...............#....#....................................#..........#.#.
