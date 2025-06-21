@@ -1,4 +1,5 @@
 ﻿using System.Text.RegularExpressions;
+using System.Threading.Channels;
 using Utilities;
 
 namespace AoC_11
@@ -26,8 +27,26 @@ namespace AoC_11
 
                 for (int j = 0; j < input.Count; j++)
                 {
+                    if (input[j] == 0)
+                    {
+                        stones.Add(1);
+                        continue;
+                    }
 
+                    var temp = input[j].ToString().Length;
+                    if (temp % 2 == 0)
+                    {
+                        stones.Add(input[j] / 10);
+                        stones.Add(input[j] % 10);
+                        continue;
+                    }
+
+                    stones.Add(input[j] * 2024);
+
+                    stones.ForEach(p => Console.WriteLine(p));
                 }
+
+                blinks.Add(stones);
             }
         }
     }
