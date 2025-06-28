@@ -9,21 +9,21 @@ namespace AoC_11
         private const string _inputPath = @".\input\ex_input.txt";
         private const string RegPattern = @"\d+";
 
-        static List<int> stones = new List<int>();
-        static List<List<int>> blinks = new List<List<int>>();
+        static List<ulong> stones = new List<ulong>();
+        static List<List<ulong>> blinks = new List<List<ulong>>();
 
         static void Main(string[] args)
         {
             var inputText = InputFileReader.ReadText(_inputPath);
             MatchCollection matches = TextExtractor.ExtractText(inputText, RegPattern);
 
-            stones.AddRange(matches.Select(m => int.Parse(m.Value)).ToList());
+            stones.AddRange(matches.Select(m => ulong.Parse(m.Value)).ToList());
             blinks.Add(stones);
 
             for (int i = 0; i < 25; i++)
             {
                 var input = blinks.Last();
-                stones = new List<int>();
+                stones = new List<ulong>();
 
                 for (int j = 0; j < input.Count; j++)
                 {
@@ -34,19 +34,26 @@ namespace AoC_11
                     }
 
                     var temp = input[j].ToString().Length;
+                    var median = input[j].ToString().Length / 2;
                     if (temp % 2 == 0)
                     {
-                        stones.Add(input[j] / 10);
-                        stones.Add(input[j] % 10);
+                        var firstHalf = input[j].ToString().Substring(0, median);
+                        var secondHalf = input[j].ToString().Substring(median, median);
+                        stones.Add(ulong.Parse(firstHalf));
+                        stones.Add(ulong.Parse(secondHalf));
+
                         continue;
                     }
 
                     stones.Add(input[j] * 2024);
-
-                    stones.ForEach(p => Console.WriteLine(p));
                 }
 
                 blinks.Add(stones);
+
+                Console.Write($"Blink {i + 1}: ");
+                //stones.ForEach(p => Console.Write($"{p} "));
+                Console.Write($" Stones: {stones.Count} ");
+                Console.WriteLine();
             }
         }
     }
